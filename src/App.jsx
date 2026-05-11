@@ -564,6 +564,7 @@ function App() {
           <section className="player-section">
             <div className="book-info">
               <div className="book-cover" style={{ background: 'linear-gradient(135deg, #e04e39, #f28f3b)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontWeight: 'bold', fontSize: '20px' }}>
+                {currentBook.key}ze: '20px' }}>
                 {currentBook.key}
               </div>
               <div className="book-details">
