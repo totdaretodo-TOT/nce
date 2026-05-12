@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>新概念英语 NCE 学习播放器 - 测试版</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --font-sans: "IBM Plex Sans", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+      --font-display: "Space Grotesk", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+      --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+      --ink-1: #141414;
+      --ink-2: #3d3d3d;
+      --ink-3: #6b6f76;
+      --paper-1: #f7f3ee;
+      --paper-2: #efe9e2;
+      --paper-3: #e6dfd6;
+
+      --accent-1: #e04e39;
+      --accent-2: #f28f3b;
+      --accent-3: rgba(224, 78, 57, 0.18);
+      --accent-strong: rgba(224, 78, 57, 0.35);
+
+      --glass: rgba(255, 255, 255, 0.78);
+      --glass-strong: rgba(255, 255, 255, 0.92);
+      --border: rgba(20, 20, 20, 0.1);
+      --border-strong: rgba(20, 20, 20, 0.18);
+
+      --shadow-sm: 0 10px 24px rgba(18, 18, 18, 0.08);
+      --shadow-md: 0 24px 50px rgba(18, 18, 18, 0.14);
+
+      --radius-xl: 28px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --radius-sm: 12px;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      min-height: 100vh;
+      color: var(--ink-1);
+      line-height: 1.5;
+      letter-spacing: -0.01em;
+      background: var(--paper-1);
+      -webkit-font-smoothing: antialiased;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .header {
+      text-align: center;
+      padding: 40px 20px;
+      background: var(--glass-strong);
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border-strong);
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      font-family: var(--font-display);
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--accent-1);
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      color: var(--ink-2);
+      font-size: 14px;
+    }
+
+    .player-section {
+      background: var(--glass);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      padding: 30px;
+      margin-bottom: 20px;
+    }
+
+    .lesson-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--ink-1);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      background: var(--accent-1);
+      color: white;
+      border: none;
+      border-radius: var(--radius-sm);
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn:hover {
+      background: var(--accent-2);
+      transform: translateY(-2px);
+    }
+
+    .btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .lyrics-display {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .lyric-line {
+      padding: 15px 20px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      background: var(--paper-2);
+    }
+
+    .lyric-line:hover {
+      background: var(--accent-3);
+      border-color: var(--accent-1);
+    }
+
+    .lyric-line.active {
+      background: var(--accent-3);
+      border-color: var(--accent-strong);
+    }
+
+    .lyric-text {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--ink-1);
+      margin-bottom: 5px;
+    }
+
+    .lyric-line.active .lyric-text {
+      color: var(--accent-1);
+    }
+
+    .lyric-translation {
+      font-size: 14px;
+      color: var(--ink-2);
+    }
+
+    .status {
+      text-align: center;
+      padding: 10px;
+      color: var(--ink-3);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>📚 新概念英语学习播放器</h1>
+      <p>New Concept English Learning Player - 测试版</p>
+    </div>
+
+    <div class="player-section">
+      <h2 class="lesson-title" id="lessonTitle">Lesson 1: Excuse me!</h2>
+      
+      <div class="controls">
+        <button class="btn" onclick="prevLesson()">◀ 上一课</button>
+        <button class="btn" id="playBtn" onclick="togglePlay()">▶ 播放</button>
+        <button class="btn" onclick="nextLesson()">下一课 ▶</button>
+      </div>
+
+      <div class="status" id="status">点击播放按钮开始学习</div>
+
+      <div class="lyrics-display" id="lyricsDisplay"></div>
+    </div>
+  </div>
+
+  <script>
+    const lessons = [
+      {
+        id: 1,
+        title: 'Lesson 1: Excuse me!',
+        titleCn: '打扰一下',
+        lyrics: [
+          { en: 'Excuse me!', cn: '打扰一下！' },
+          { en: 'Yes?', cn: '什么事？' },
+          { en: 'Is this your handbag?', cn: '这是您的手提包吗？' },
+          { en: 'Pardon?', cn: '请再说一遍？' },
+          { en: 'Is this your handbag?', cn: '这是您的手提包吗？' },
+          { en: 'Yes, it is.', cn: '是的，它是。' },
+          { en: 'Thank you very much.', cn: '非常感谢。' }
+        ]
+      },
+      {
+        id: 2,
+        title: 'Lesson 2: Sorry, sir',
+        titleCn: '对不起，先生',
+        lyrics: [
+          { en: 'My coat and my umbrella, please.', cn: '请拿一下我的外套和伞。' },
+          { en: 'Here is my ticket.', cn: '这是我的票。' },
+          { en: 'Thank you, sir.', cn: '谢谢，先生。' },
+          { en: 'Number seven.', cn: '七号。' },
+          { en: 'Here is your umbrella and your coat.', cn: '这是您的伞和外套。' },
+          { en: 'This is not my umbrella.', cn: '这不是我的伞。' },
+          { en: 'Sorry, sir.', cn: '对不起，先生。' },
+          { en: 'Is this your umbrella?', cn: '这是您的伞吗？' },
+          { en: 'No, it isn\'t.', cn: '不，不是。' },
+          { en: 'Is this it?', cn: '这是吗？' },
+          { en: 'Yes, it is.', cn: '是的，它是。' },
+          { en: 'Thank you very much.', cn: '非常感谢。' }
+        ]
+      }
+    ];
+
+    let currentLessonIndex = 0;
+    let currentLyricIndex = -1;
+    let isPlaying = false;
+    let playInterval = null;
+
+    function renderLesson() {
+      const lesson = lessons[currentLessonIndex];
+      document.getElementById('lessonTitle').textContent = `${lesson.title} - ${lesson.titleCn}`;
+      
+      const lyricsDisplay = document.getElementById('lyricsDisplay');
+      lyricsDisplay.innerHTML = '';
+      
+      lesson.lyrics.forEach((lyric, index) => {
+        const div = document.createElement('div');
+        div.className = 'lyric-line';
+        div.innerHTML = `
+          <div class="lyric-text">${lyric.en}</div>
+          <div class="lyric-translation">${lyric.cn}</div>
+        `;
+        div.onclick = () => selectLyric(index);
+        lyricsDisplay.appendChild(div);
+      });
+    }
+
+    function selectLyric(index) {
+      currentLyricIndex = index;
+      updateActiveLyric();
+    }
+
+    function updateActiveLyric() {
+      const lines = document.querySelectorAll('.lyric-line');
+      lines.forEach((line, index) => {
+        if (index === currentLyricIndex) {
+          line.classList.add('active');
+          line.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+          line.classList.remove('active');
+        }
+      });
+    }
+
+    function togglePlay() {
+      isPlaying = !isPlaying;
+      const playBtn = document.getElementById('playBtn');
+      const status = document.getElementById('status');
+      
+      if (isPlaying) {
+        playBtn.textContent = '⏸ 暂停';
+        status.textContent = '正在播放...';
+        
+        if (currentLyricIndex === -1) {
+          currentLyricIndex = 0;
+        }
+        
+        updateActiveLyric();
+        
+        playInterval = setInterval(() => {
+          const lesson = lessons[currentLessonIndex];
+          if (currentLyricIndex < lesson.lyrics.length - 1) {
+            currentLyricIndex++;
+            updateActiveLyric();
+          } else {
+            togglePlay();
+          }
+        }, 2500);
+      } else {
+        playBtn.textContent = '▶ 播放';
+        status.textContent = '已暂停';
+        clearInterval(playInterval);
+      }
+    }
+
+    function prevLesson() {
+      if (currentLessonIndex > 0) {
+        if (isPlaying) togglePlay();
+        currentLessonIndex--;
+        currentLyricIndex = -1;
+        renderLesson();
+        document.getElementById('status').textContent = '已切换到上一课';
+      }
+    }
+
+    function nextLesson() {
+      if (currentLessonIndex < lessons.length - 1) {
+        if (isPlaying) togglePlay();
+        currentLessonIndex++;
+        currentLyricIndex = -1;
+        renderLesson();
+        document.getElementById('status').textContent = '已切换到下一课';
+      }
+    }
+
+    // 初始化
+    renderLesson();
+  </script>
+</body>
+</html>
