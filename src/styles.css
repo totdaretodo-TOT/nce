@@ -606,6 +606,55 @@ body {
   padding: 8px;
 }
 
+.footer .attribution {
+  display: block;
+  max-width: 720px;
+  margin: 6px auto 0;
+  line-height: 1.45;
+}
+
+.empty-tab {
+  color: var(--ink-3);
+  padding: 28px 16px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.app-loading,
+.app-error {
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--ink-2);
+  padding: 24px;
+}
+
+.app-error button {
+  font: inherit;
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-strong);
+  background: var(--glass);
+  color: var(--ink-1);
+  cursor: pointer;
+}
+
+.lesson-item .lesson-sub {
+  font-size: 12px;
+  color: var(--ink-3);
+  font-weight: 400;
+  margin-top: 4px;
+}
+
+.lyrics-loading {
+  padding: 24px;
+  text-align: center;
+  color: var(--ink-3);
+}
+
 @media (max-width: 768px) {
   #app {
     padding: 8px;

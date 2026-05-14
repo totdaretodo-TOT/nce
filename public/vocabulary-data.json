@@ -1,0 +1,95 @@
+{
+  "NCE1": {
+    "1": {
+      "vocabulary": [
+        { "word": "excuse", "phonetic": "/ɪkˈskjuːz/", "pos": "verb", "def": "原谅；请求允许", "example": "Excuse me, where is the library?" },
+        { "word": "me", "phonetic": "/miː/", "pos": "pronoun", "def": "我（宾格）", "example": "Please help me." },
+        { "word": "yes", "phonetic": "/jes/", "pos": "adverb", "def": "是的", "example": "Yes, I agree." },
+        { "word": "is", "phonetic": "/ɪz/", "pos": "verb", "def": "是（be动词第三人称单数）", "example": "This is a book." },
+        { "word": "this", "phonetic": "/ðɪs/", "pos": "pronoun", "def": "这个", "example": "This is my friend." },
+        { "word": "your", "phonetic": "/jɔːr/", "pos": "determiner", "def": "你的；您的", "example": "Is this your pen?" },
+        { "word": "handbag", "phonetic": "/ˈhændbæɡ/", "pos": "noun", "def": "手提包", "example": "She carries a handbag." },
+        { "word": "pardon", "phonetic": "/ˈpɑːrdn/", "pos": "interjection", "def": "请再说一遍", "example": "Pardon? I didn't catch that." },
+        { "word": "it", "phonetic": "/ɪt/", "pos": "pronoun", "def": "它", "example": "It is raining." },
+        { "word": "thank", "phonetic": "/θæŋk/", "pos": "verb", "def": "感谢", "example": "I thank you for your help." },
+        { "word": "very much", "phonetic": "/ˈveri mʌtʃ/", "pos": "phrase", "def": "非常", "example": "Thank you very much!" }
+      ],
+      "quizzes": [
+        { "q": "当你想引起别人注意时，应该说什么？", "options": ["Hey!", "Excuse me!", "Hello!", "Hi!"], "answer": 1, "exp": "Excuse me 是礼貌地引起注意的方式" },
+        { "q": "'Pardon?' 的意思是？", "options": ["对不起", "请再说一遍", "谢谢", "不客气"], "answer": 1, "exp": "Pardon 用于请求对方重复刚才说的话" },
+        { "q": "'Is this your handbag?' 中 'your' 的词性是？", "options": ["名词", "动词", "形容词性物主代词", "副词"], "answer": 2, "exp": "your 是形容词性物主代词，表示'你的'" }
+      ]
+    },
+    "2": {
+      "vocabulary": [
+        { "word": "coat", "phonetic": "/koʊt/", "pos": "noun", "def": "外套；大衣", "example": "Put on your coat, it's cold." },
+        { "word": "umbrella", "phonetic": "/ʌmˈbrelə/", "pos": "noun", "def": "雨伞", "example": "Don't forget your umbrella." },
+        { "word": "please", "phonetic": "/pliːz/", "pos": "adverb", "def": "请", "example": "Please sit down." },
+        { "word": "here", "phonetic": "/hɪr/", "pos": "adverb", "def": "这里", "example": "Come here, please." },
+        { "word": "ticket", "phonetic": "/ˈtɪkɪt/", "pos": "noun", "def": "票；券", "example": "Show me your ticket." },
+        { "word": "number", "phonetic": "/ˈnʌmbər/", "pos": "noun", "def": "号码；数字", "example": "What's your phone number?" },
+        { "word": "sorry", "phonetic": "/ˈsɑːri/", "pos": "adjective", "def": "抱歉的；对不起的", "example": "I'm sorry for being late." },
+        { "word": "sir", "phonetic": "/sɜːr/", "pos": "noun", "def": "先生（尊称）", "example": "Yes, sir." }
+      ],
+      "quizzes": [
+        { "q": "'Sorry' 用于什么场合？", "options": ["打招呼", "道歉", "感谢", "告别"], "answer": 1, "exp": "Sorry 用于表达歉意" },
+        { "q": "'Sir' 是对谁的称呼？", "options": ["女士", "男士", "孩子", "老人"], "answer": 1, "exp": "Sir 是对男士的尊称" }
+      ]
+    }
+  },
+  "NCE2": {
+    "1": {
+      "vocabulary": [
+        { "word": "private", "phonetic": "/ˈpraɪvət/", "pos": "adjective", "def": "私人的；私密的", "example": "This is a private conversation." },
+        { "word": "conversation", "phonetic": "/ˌkɑːnvərˈseɪʃn/", "pos": "noun", "def": "对话；交谈", "example": "We had a long conversation." },
+        { "word": "theatre", "phonetic": "/ˈθiːətər/", "pos": "noun", "def": "剧院；戏院", "example": "Let's go to the theatre." },
+        { "word": "seat", "phonetic": "/siːt/", "pos": "noun", "def": "座位", "example": "Please take a seat." },
+        { "word": "play", "phonetic": "/pleɪ/", "pos": "noun", "def": "戏剧；剧本", "example": "We watched a play." },
+        { "word": "loudly", "phonetic": "/ˈlaʊdli/", "pos": "adverb", "def": "大声地", "example": "Don't speak loudly in the library." },
+        { "word": "angry", "phonetic": "/ˈæŋɡri/", "pos": "adjective", "def": "生气的；愤怒的", "example": "She was very angry." },
+        { "word": "angrily", "phonetic": "/ˈæŋɡrəli/", "pos": "adverb", "def": "生气地", "example": "He spoke angrily." },
+        { "word": "attention", "phonetic": "/əˈtenʃn/", "pos": "noun", "def": "注意；关注", "example": "Pay attention to the teacher." },
+        { "word": "bear", "phonetic": "/ber/", "pos": "verb", "def": "忍受；容忍", "example": "I can't bear the noise." },
+        { "word": "business", "phonetic": "/ˈbɪznəs/", "pos": "noun", "def": "事情；业务", "example": "Mind your own business." },
+        { "word": "rudely", "phonetic": "/ˈruːdli/", "pos": "adverb", "def": "粗鲁地", "example": "He answered rudely." }
+      ],
+      "quizzes": [
+        { "q": "故事发生在哪里？", "options": ["电影院", "剧院", "餐厅", "公园"], "answer": 1, "exp": "故事发生在theatre（剧院）" },
+        { "q": "'pay attention' 的意思是？", "options": ["付钱", "注意", "关心", "忽视"], "answer": 1, "exp": "pay attention 意为'注意；留心'" },
+        { "q": "'It's none of your business' 表示？", "options": ["这很重要", "不关你的事", "这是秘密", "需要帮助"], "answer": 1, "exp": "这句话表示'不关你的事'" }
+      ]
+    }
+  },
+  "NCE3": {
+    "1": {
+      "vocabulary": [
+        { "word": "puma", "phonetic": "/ˈpjuːmə/", "pos": "noun", "def": "美洲狮", "example": "A puma was spotted in the area." },
+        { "word": "spot", "phonetic": "/spɑːt/", "pos": "verb", "def": "发现；认出", "example": "I spotted an error in the report." },
+        { "word": "evidence", "phonetic": "/ˈevɪdəns/", "pos": "noun", "def": "证据", "example": "There is no evidence to support this claim." },
+        { "word": "accumulate", "phonetic": "/əˈkjuːmjəleɪt/", "pos": "verb", "def": "积累；积聚", "example": "Dust accumulated on the shelf." },
+        { "word": "oblige", "phonetic": "/əˈblaɪdʒ/", "pos": "verb", "def": "迫使；使感激", "example": "I felt obliged to help." },
+        { "word": "hunt", "phonetic": "/hʌnt/", "pos": "verb", "def": "打猎；搜寻", "example": "They hunted for the missing child." },
+        { "word": "blackberry", "phonetic": "/ˈblækberi/", "pos": "noun", "def": "黑莓", "example": "We picked blackberries in the forest." },
+        { "word": "human being", "phonetic": "/ˈhjuːmən ˈbiːɪŋ/", "pos": "noun", "def": "人类", "example": "All human beings deserve respect." }
+      ],
+      "quizzes": [
+        { "q": "为什么最初的报告没被重视？", "options": ["美洲狮不危险", "报告来自普通人", "动物园不在意", "距离太远"], "answer": 1, "exp": "因为报告来自普通人而非专家" },
+        { "q": "'accumulate' 的意思是？", "options": ["减少", "积累", "分散", "消失"], "answer": 1, "exp": "accumulate 意为'积累；积聚'" }
+      ]
+    }
+  },
+  "NCE4": {
+    "1": {
+      "vocabulary": [
+        { "word": "fossil", "phonetic": "/ˈfɑːsl/", "pos": "noun", "def": "化石", "example": "They found ancient fossils." },
+        { "word": "anthropologist", "phonetic": "/ˌænθrəˈpɑːlədʒɪst/", "pos": "noun", "def": "人类学家", "example": "The anthropologist studied ancient cultures." },
+        { "word": "ancestor", "phonetic": "/ˈænsestər/", "pos": "noun", "def": "祖先", "example": "Our ancestors lived in caves." },
+        { "word": "primitive", "phonetic": "/ˈprɪmətɪv/", "pos": "adjective", "def": "原始的；远古的", "example": "Primitive tools were made of stone." },
+        { "word": "evolution", "phonetic": "/ˌiːvəˈluːʃn/", "pos": "noun", "def": "进化；演变", "example": "The theory of evolution explains species development." }
+      ],
+      "quizzes": [
+        { "q": "人类学家主要研究什么？", "options": ["动物", "植物", "人类", "天文"], "answer": 2, "exp": "Anthropologist（人类学家）研究人类及其文化" }
+      ]
+    }
+  }
+}

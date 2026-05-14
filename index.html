@@ -11,6 +11,38 @@
   <link rel="stylesheet" href="/src/styles.css" />
 </head>
 <body>
+  <div
+    id="nce-local-open-hint"
+    style="display:none;position:fixed;inset:0;z-index:999999;background:#141820;color:#e8e4dc;padding:28px 24px;font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow:auto;box-sizing:border-box;"
+  >
+    <p style="margin:0 0 14px;font-size:14px;color:#ff9f6e;">检测到地址栏是 <code style="background:#2a3140;padding:2px 8px;border-radius:6px;">file://</code>，且你很可能打开的是<strong>项目根目录</strong>里的 <code style="background:#2a3140;padding:2px 8px;border-radius:6px;">index.html</code>。</p>
+    <h1 style="font-size:1.25rem;margin:0 0 10px;font-weight:650;">这个文件不能直接双击当网页用</h1>
+    <p style="margin:0 0 22px;opacity:0.88;">根目录的 <code>index.html</code> 是给 Vite 开发/打包用的，浏览器会按失败路径去加载 <code>/src/main.jsx</code>，所以控制台会报 CORS / 找不到文件，页面是白的。</p>
+    <h2 style="font-size:1.05rem;margin:0 0 12px;font-weight:600;">请改用下面任一方式：</h2>
+    <ol style="margin:0;padding-left:1.25rem;">
+      <li style="margin-bottom:14px;">
+        <strong>本地开发预览</strong>：在终端进入本仓库目录，执行
+        <code style="background:#2a3140;padding:2px 10px;border-radius:6px;white-space:nowrap;">npm run dev</code>
+        ，再用浏览器打开终端里显示的地址（例如 <code style="background:#2a3140;padding:2px 8px;border-radius:6px;">http://localhost:5173</code>）。
+      </li>
+      <li style="margin-bottom:14px;">
+        <strong>离线打开（像「只双击网页」）</strong>：终端先执行
+        <code style="background:#2a3140;padding:2px 10px;border-radius:6px;white-space:nowrap;">npm run build</code>
+        ，然后打开文件夹里的
+        <strong style="color:#ffcf8a">dist/index.html</strong>
+        （完整路径形如：<code style="background:#2a3140;padding:2px 8px;border-radius:6px;word-break:break-all;">…/nce/dist/index.html</code>）。Mac 也可双击 <code style="background:#2a3140;padding:2px 8px;border-radius:6px;">open-dist.command</code>。
+      </li>
+    </ol>
+  </div>
+  <script>
+    (function () {
+      if (location.protocol !== 'file:') return
+      // 打包后的页面在 dist/ 下，file:// 打开是正常用法，不要挡全屏提示
+      if (/\/dist\/index\.html$/i.test(location.pathname)) return
+      var el = document.getElementById('nce-local-open-hint')
+      if (el) el.style.display = 'block'
+    })()
+  </script>
   <div id="app"></div>
   <script type="module" src="/src/main.jsx"></script>
 </body>
