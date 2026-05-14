@@ -5,90 +5,134 @@
         { "word": "excuse", "phonetic": "/ɪkˈskjuːz/", "pos": "verb", "def": "原谅；请求允许", "example": "Excuse me, where is the library?" },
         { "word": "me", "phonetic": "/miː/", "pos": "pronoun", "def": "我（宾格）", "example": "Please help me." },
         { "word": "yes", "phonetic": "/jes/", "pos": "adverb", "def": "是的", "example": "Yes, I agree." },
-        { "word": "is", "phonetic": "/ɪz/", "pos": "verb", "def": "是（be动词第三人称单数）", "example": "This is a book." },
+        { "word": "is", "phonetic": "/ɪz/", "pos": "verb", "def": "是（be动词）", "example": "This is a book." },
         { "word": "this", "phonetic": "/ðɪs/", "pos": "pronoun", "def": "这个", "example": "This is my friend." },
-        { "word": "your", "phonetic": "/jɔːr/", "pos": "determiner", "def": "你的；您的", "example": "Is this your pen?" },
+        { "word": "your", "phonetic": "/jɔːr/", "pos": "determiner", "def": "你的", "example": "Is this your pen?" },
         { "word": "handbag", "phonetic": "/ˈhændbæɡ/", "pos": "noun", "def": "手提包", "example": "She carries a handbag." },
         { "word": "pardon", "phonetic": "/ˈpɑːrdn/", "pos": "interjection", "def": "请再说一遍", "example": "Pardon? I didn't catch that." },
         { "word": "it", "phonetic": "/ɪt/", "pos": "pronoun", "def": "它", "example": "It is raining." },
-        { "word": "thank", "phonetic": "/θæŋk/", "pos": "verb", "def": "感谢", "example": "I thank you for your help." },
+        { "word": "thank", "phonetic": "/θæŋk/", "pos": "verb", "def": "感谢", "example": "I thank you." },
         { "word": "very much", "phonetic": "/ˈveri mʌtʃ/", "pos": "phrase", "def": "非常", "example": "Thank you very much!" }
       ],
       "quizzes": [
-        { "q": "当你想引起别人注意时，应该说什么？", "options": ["Hey!", "Excuse me!", "Hello!", "Hi!"], "answer": 1, "exp": "Excuse me 是礼貌地引起注意的方式" },
-        { "q": "'Pardon?' 的意思是？", "options": ["对不起", "请再说一遍", "谢谢", "不客气"], "answer": 1, "exp": "Pardon 用于请求对方重复刚才说的话" },
-        { "q": "'Is this your handbag?' 中 'your' 的词性是？", "options": ["名词", "动词", "形容词性物主代词", "副词"], "answer": 2, "exp": "your 是形容词性物主代词，表示'你的'" }
+        { "q": "当你想引起别人注意时，应该说？", "options": ["Hey!", "Excuse me!", "Hello!", "Hi!"], "answer": 1, "exp": "Excuse me 是礼貌的方式" },
+        { "q": "'Pardon?' 用于？", "options": ["道歉", "请求重复", "感谢", "告别"], "answer": 1, "exp": "Pardon 用于请求对方重复" },
+        { "q": "'Is this your handbag?' 是什么句型？", "options": ["陈述句", "一般疑问句", "特殊疑问句", "祈使句"], "answer": 1, "exp": "以be动词开头的疑问句" }
       ]
     },
     "2": {
       "vocabulary": [
-        { "word": "coat", "phonetic": "/koʊt/", "pos": "noun", "def": "外套；大衣", "example": "Put on your coat, it's cold." },
-        { "word": "umbrella", "phonetic": "/ʌmˈbrelə/", "pos": "noun", "def": "雨伞", "example": "Don't forget your umbrella." },
+        { "word": "coat", "phonetic": "/koʊt/", "pos": "noun", "def": "外套", "example": "Put on your coat." },
+        { "word": "umbrella", "phonetic": "/ʌmˈbrelə/", "pos": "noun", "def": "雨伞", "example": "Take an umbrella." },
         { "word": "please", "phonetic": "/pliːz/", "pos": "adverb", "def": "请", "example": "Please sit down." },
-        { "word": "here", "phonetic": "/hɪr/", "pos": "adverb", "def": "这里", "example": "Come here, please." },
-        { "word": "ticket", "phonetic": "/ˈtɪkɪt/", "pos": "noun", "def": "票；券", "example": "Show me your ticket." },
-        { "word": "number", "phonetic": "/ˈnʌmbər/", "pos": "noun", "def": "号码；数字", "example": "What's your phone number?" },
-        { "word": "sorry", "phonetic": "/ˈsɑːri/", "pos": "adjective", "def": "抱歉的；对不起的", "example": "I'm sorry for being late." },
-        { "word": "sir", "phonetic": "/sɜːr/", "pos": "noun", "def": "先生（尊称）", "example": "Yes, sir." }
+        { "word": "here", "phonetic": "/hɪr/", "pos": "adverb", "def": "这里", "example": "Come here." },
+        { "word": "ticket", "phonetic": "/ˈtɪkɪt/", "pos": "noun", "def": "票", "example": "Show your ticket." },
+        { "word": "number", "phonetic": "/ˈnʌmbər/", "pos": "noun", "def": "号码", "example": "What's your number?" },
+        { "word": "sorry", "phonetic": "/ˈsɑːri/", "pos": "adjective", "def": "抱歉的", "example": "I'm sorry." },
+        { "word": "sir", "phonetic": "/sɜːr/", "pos": "noun", "def": "先生", "example": "Yes, sir." }
       ],
       "quizzes": [
-        { "q": "'Sorry' 用于什么场合？", "options": ["打招呼", "道歉", "感谢", "告别"], "answer": 1, "exp": "Sorry 用于表达歉意" },
-        { "q": "'Sir' 是对谁的称呼？", "options": ["女士", "男士", "孩子", "老人"], "answer": 1, "exp": "Sir 是对男士的尊称" }
+        { "q": "'Sorry' 表达什么？", "options": ["感谢", "道歉", "问候", "告别"], "answer": 1, "exp": "Sorry 用于道歉" },
+        { "q": "'Sir' 是对谁的称呼？", "options": ["女士", "男士", "孩子", "动物"], "answer": 1, "exp": "Sir 是对男士的尊称" }
+      ]
+    },
+    "3": {
+      "vocabulary": [
+        { "word": "nice", "phonetic": "/naɪs/", "pos": "adjective", "def": "好的；令人愉快的", "example": "Nice to meet you." },
+        { "word": "meet", "phonetic": "/miːt/", "pos": "verb", "def": "遇见；见面", "example": "Let's meet tomorrow." },
+        { "word": "Swedish", "phonetic": "/ˈswiːdɪʃ/", "pos": "adjective", "def": "瑞典的", "example": "She is Swedish." },
+        { "word": "name", "phonetic": "/neɪm/", "pos": "noun", "def": "名字", "example": "What's your name?" },
+        { "word": "French", "phonetic": "/frentʃ/", "pos": "adjective", "def": "法国的", "example": "He speaks French." }
+      ],
+      "quizzes": [
+        { "q": "'Nice to meet you' 的回应是？", "options": ["Goodbye", "Nice to meet you", "Thank you", "Sorry"], "answer": 1, "exp": "用同样的话回应" }
+      ]
+    },
+    "4": {
+      "vocabulary": [
+        { "word": "teacher", "phonetic": "/ˈtiːtʃər/", "pos": "noun", "def": "教师", "example": "She is a teacher." },
+        { "word": "student", "phonetic": "/ˈstuːdnt/", "pos": "noun", "def": "学生", "example": "I am a student." },
+        { "word": "engineer", "phonetic": "/ˌendʒɪˈnɪr/", "pos": "noun", "def": "工程师", "example": "He is an engineer." },
+        { "word": "job", "phonetic": "/dʒɑːb/", "pos": "noun", "def": "工作", "example": "What's your job?" },
+        { "word": "keyboard", "phonetic": "/ˈkiːbɔːrd/", "pos": "noun", "def": "键盘", "example": "Type on the keyboard." },
+        { "word": "operator", "phonetic": "/ˈɑːpəreɪtər/", "pos": "noun", "def": "操作员", "example": "She is an operator." }
+      ],
+      "quizzes": [
+        { "q": "询问职业用？", "options": ["What's your name?", "What's your job?", "Where are you?", "How are you?"], "answer": 1, "exp": "What's your job? 询问职业" }
+      ]
+    },
+    "5": {
+      "vocabulary": [
+        { "word": "how", "phonetic": "/haʊ/", "pos": "adverb", "def": "如何；怎样", "example": "How are you?" },
+        { "word": "today", "phonetic": "/təˈdeɪ/", "pos": "adverb", "def": "今天", "example": "What day is today?" },
+        { "word": "well", "phonetic": "/wel/", "pos": "adverb", "def": "好地", "example": "I'm very well." },
+        { "word": "fine", "phonetic": "/faɪn/", "pos": "adjective", "def": "好的", "example": "I'm fine, thanks." },
+        { "word": "thanks", "phonetic": "/θæŋks/", "pos": "interjection", "def": "谢谢", "example": "Thanks for your help." },
+        { "word": "goodbye", "phonetic": "/ɡʊdˈbaɪ/", "pos": "interjection", "def": "再见", "example": "Goodbye, see you later." }
+      ],
+      "quizzes": [
+        { "q": "'How are you?' 的常见回答是？", "options": ["I'm fine", "I'm 20", "I'm a teacher", "I'm here"], "answer": 0, "exp": "I'm fine 是标准回答" }
       ]
     }
   },
   "NCE2": {
     "1": {
       "vocabulary": [
-        { "word": "private", "phonetic": "/ˈpraɪvət/", "pos": "adjective", "def": "私人的；私密的", "example": "This is a private conversation." },
-        { "word": "conversation", "phonetic": "/ˌkɑːnvərˈseɪʃn/", "pos": "noun", "def": "对话；交谈", "example": "We had a long conversation." },
-        { "word": "theatre", "phonetic": "/ˈθiːətər/", "pos": "noun", "def": "剧院；戏院", "example": "Let's go to the theatre." },
-        { "word": "seat", "phonetic": "/siːt/", "pos": "noun", "def": "座位", "example": "Please take a seat." },
-        { "word": "play", "phonetic": "/pleɪ/", "pos": "noun", "def": "戏剧；剧本", "example": "We watched a play." },
-        { "word": "loudly", "phonetic": "/ˈlaʊdli/", "pos": "adverb", "def": "大声地", "example": "Don't speak loudly in the library." },
-        { "word": "angry", "phonetic": "/ˈæŋɡri/", "pos": "adjective", "def": "生气的；愤怒的", "example": "She was very angry." },
-        { "word": "angrily", "phonetic": "/ˈæŋɡrəli/", "pos": "adverb", "def": "生气地", "example": "He spoke angrily." },
-        { "word": "attention", "phonetic": "/əˈtenʃn/", "pos": "noun", "def": "注意；关注", "example": "Pay attention to the teacher." },
-        { "word": "bear", "phonetic": "/ber/", "pos": "verb", "def": "忍受；容忍", "example": "I can't bear the noise." },
-        { "word": "business", "phonetic": "/ˈbɪznəs/", "pos": "noun", "def": "事情；业务", "example": "Mind your own business." },
-        { "word": "rudely", "phonetic": "/ˈruːdli/", "pos": "adverb", "def": "粗鲁地", "example": "He answered rudely." }
+        { "word": "private", "phonetic": "/ˈpraɪvət/", "pos": "adjective", "def": "私人的", "example": "This is private." },
+        { "word": "conversation", "phonetic": "/ˌkɑːnvərˈseɪʃn/", "pos": "noun", "def": "对话", "example": "We had a conversation." },
+        { "word": "theatre", "phonetic": "/ˈθiːətər/", "pos": "noun", "def": "剧院", "example": "Go to the theatre." },
+        { "word": "seat", "phonetic": "/siːt/", "pos": "noun", "def": "座位", "example": "Take a seat." },
+        { "word": "play", "phonetic": "/pleɪ/", "pos": "noun", "def": "戏剧", "example": "Watch a play." },
+        { "word": "loudly", "phonetic": "/ˈlaʊdli/", "pos": "adverb", "def": "大声地", "example": "Speak loudly." },
+        { "word": "angry", "phonetic": "/ˈæŋɡri/", "pos": "adjective", "def": "生气的", "example": "I'm angry." },
+        { "word": "attention", "phonetic": "/əˈtenʃn/", "pos": "noun", "def": "注意", "example": "Pay attention." },
+        { "word": "bear", "phonetic": "/ber/", "pos": "verb", "def": "忍受", "example": "I can't bear it." },
+        { "word": "business", "phonetic": "/ˈbɪznəs/", "pos": "noun", "def": "事情", "example": "Mind your business." },
+        { "word": "rudely", "phonetic": "/ˈruːdli/", "pos": "adverb", "def": "粗鲁地", "example": "He spoke rudely." }
       ],
       "quizzes": [
-        { "q": "故事发生在哪里？", "options": ["电影院", "剧院", "餐厅", "公园"], "answer": 1, "exp": "故事发生在theatre（剧院）" },
-        { "q": "'pay attention' 的意思是？", "options": ["付钱", "注意", "关心", "忽视"], "answer": 1, "exp": "pay attention 意为'注意；留心'" },
-        { "q": "'It's none of your business' 表示？", "options": ["这很重要", "不关你的事", "这是秘密", "需要帮助"], "answer": 1, "exp": "这句话表示'不关你的事'" }
+        { "q": "故事发生在哪里？", "options": ["电影院", "剧院", "餐厅", "公园"], "answer": 1, "exp": "在theatre（剧院）" },
+        { "q": "'pay attention' 的意思？", "options": ["付钱", "注意", "关心", "忽视"], "answer": 1, "exp": "pay attention 意为注意" }
+      ]
+    },
+    "2": {
+      "vocabulary": [
+        { "word": "breakfast", "phonetic": "/ˈbrekfəst/", "pos": "noun", "def": "早餐", "example": "Have breakfast." },
+        { "word": "lunch", "phonetic": "/lʌntʃ/", "pos": "noun", "def": "午餐", "example": "Eat lunch." },
+        { "word": "outside", "phonetic": "/ˌaʊtˈsaɪd/", "pos": "adverb", "def": "外面", "example": "Go outside." },
+        { "word": "ring", "phonetic": "/rɪŋ/", "pos": "verb", "def": "响铃", "example": "The phone rang." },
+        { "word": "aunt", "phonetic": "/ænt/", "pos": "noun", "def": "姑妈", "example": "My aunt lives here." }
+      ],
+      "quizzes": [
+        { "q": "一天中的第一餐是？", "options": ["lunch", "breakfast", "dinner", "supper"], "answer": 1, "exp": "breakfast 是早餐" }
       ]
     }
   },
   "NCE3": {
     "1": {
       "vocabulary": [
-        { "word": "puma", "phonetic": "/ˈpjuːmə/", "pos": "noun", "def": "美洲狮", "example": "A puma was spotted in the area." },
-        { "word": "spot", "phonetic": "/spɑːt/", "pos": "verb", "def": "发现；认出", "example": "I spotted an error in the report." },
-        { "word": "evidence", "phonetic": "/ˈevɪdəns/", "pos": "noun", "def": "证据", "example": "There is no evidence to support this claim." },
-        { "word": "accumulate", "phonetic": "/əˈkjuːmjəleɪt/", "pos": "verb", "def": "积累；积聚", "example": "Dust accumulated on the shelf." },
-        { "word": "oblige", "phonetic": "/əˈblaɪdʒ/", "pos": "verb", "def": "迫使；使感激", "example": "I felt obliged to help." },
-        { "word": "hunt", "phonetic": "/hʌnt/", "pos": "verb", "def": "打猎；搜寻", "example": "They hunted for the missing child." },
-        { "word": "blackberry", "phonetic": "/ˈblækberi/", "pos": "noun", "def": "黑莓", "example": "We picked blackberries in the forest." },
-        { "word": "human being", "phonetic": "/ˈhjuːmən ˈbiːɪŋ/", "pos": "noun", "def": "人类", "example": "All human beings deserve respect." }
+        { "word": "puma", "phonetic": "/ˈpjuːmə/", "pos": "noun", "def": "美洲狮", "example": "A puma was spotted." },
+        { "word": "spot", "phonetic": "/spɑːt/", "pos": "verb", "def": "发现", "example": "I spotted an error." },
+        { "word": "evidence", "phonetic": "/ˈevɪdəns/", "pos": "noun", "def": "证据", "example": "Show me evidence." },
+        { "word": "accumulate", "phonetic": "/əˈkjuːmjəleɪt/", "pos": "verb", "def": "积累", "example": "Dust accumulated." },
+        { "word": "oblige", "phonetic": "/əˈblaɪdʒ/", "pos": "verb", "def": "迫使", "example": "I felt obliged." },
+        { "word": "hunt", "phonetic": "/hʌnt/", "pos": "verb", "def": "打猎", "example": "Hunt for food." }
       ],
       "quizzes": [
-        { "q": "为什么最初的报告没被重视？", "options": ["美洲狮不危险", "报告来自普通人", "动物园不在意", "距离太远"], "answer": 1, "exp": "因为报告来自普通人而非专家" },
-        { "q": "'accumulate' 的意思是？", "options": ["减少", "积累", "分散", "消失"], "answer": 1, "exp": "accumulate 意为'积累；积聚'" }
+        { "q": "为什么报告没被重视？", "options": ["不危险", "来自普通人", "不在意", "太远"], "answer": 1, "exp": "报告来自普通人" }
       ]
     }
   },
   "NCE4": {
     "1": {
       "vocabulary": [
-        { "word": "fossil", "phonetic": "/ˈfɑːsl/", "pos": "noun", "def": "化石", "example": "They found ancient fossils." },
-        { "word": "anthropologist", "phonetic": "/ˌænθrəˈpɑːlədʒɪst/", "pos": "noun", "def": "人类学家", "example": "The anthropologist studied ancient cultures." },
-        { "word": "ancestor", "phonetic": "/ˈænsestər/", "pos": "noun", "def": "祖先", "example": "Our ancestors lived in caves." },
-        { "word": "primitive", "phonetic": "/ˈprɪmətɪv/", "pos": "adjective", "def": "原始的；远古的", "example": "Primitive tools were made of stone." },
-        { "word": "evolution", "phonetic": "/ˌiːvəˈluːʃn/", "pos": "noun", "def": "进化；演变", "example": "The theory of evolution explains species development." }
+        { "word": "fossil", "phonetic": "/ˈfɑːsl/", "pos": "noun", "def": "化石", "example": "Find fossils." },
+        { "word": "anthropologist", "phonetic": "/ˌænθrəˈpɑːlədʒɪst/", "pos": "noun", "def": "人类学家", "example": "Study anthropology." },
+        { "word": "ancestor", "phonetic": "/ˈænsestər/", "pos": "noun", "def": "祖先", "example": "Our ancestors." },
+        { "word": "primitive", "phonetic": "/ˈprɪmətɪv/", "pos": "adjective", "def": "原始的", "example": "Primitive tools." }
       ],
       "quizzes": [
-        { "q": "人类学家主要研究什么？", "options": ["动物", "植物", "人类", "天文"], "answer": 2, "exp": "Anthropologist（人类学家）研究人类及其文化" }
+        { "q": "人类学家研究什么？", "options": ["动物", "植物", "人类", "天文"], "answer": 2, "exp": "研究人类" }
       ]
     }
   }
