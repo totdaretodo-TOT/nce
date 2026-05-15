@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
 
 * {
   margin: 0;
@@ -8,56 +8,58 @@
 }
 
 :root {
-  --font-sans: "IBM Plex Sans", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
-  --font-display: "Space Grotesk", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
-  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-sans: "Inter", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-display: "Copernicus", "Tiempos Headline", "Cormorant Garamond", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
-  --ink-1: #141414;
-  --ink-2: #3d3d3d;
-  --ink-3: #6b6f76;
-  --paper-1: #f7f3ee;
-  --paper-2: #efe9e2;
-  --paper-3: #e6dfd6;
+  --ink-1: #141413;
+  --ink-2: #3d3d3a;
+  --ink-3: #8e8b82;
+  
+  --paper-1: #faf9f5;      /* canvas */
+  --paper-2: #efe9de;      /* surface-card */
+  --paper-3: #e8e0d2;      /* surface-cream-strong */
 
-  --accent-1: #e04e39;
-  --accent-2: #f28f3b;
-  --accent-3: rgba(224, 78, 57, 0.18);
-  --accent-strong: rgba(224, 78, 57, 0.35);
+  --accent-1: #cc785c;     /* primary coral */
+  --accent-2: #a9583e;     /* primary-active */
+  --accent-3: #e6dfd8;     /* primary-disabled / hairline */
+  --accent-strong: rgba(204, 120, 92, 0.2);
 
-  --glass: rgba(255, 255, 255, 0.78);
-  --glass-strong: rgba(255, 255, 255, 0.92);
-  --border: rgba(20, 20, 20, 0.1);
-  --border-strong: rgba(20, 20, 20, 0.18);
+  --glass: rgba(250, 249, 245, 0.85);
+  --glass-strong: rgba(250, 249, 245, 0.95);
+  --border: #e6dfd8;       /* hairline */
+  --border-strong: #ebe6df; /* hairline-soft */
 
-  --shadow-sm: 0 10px 24px rgba(18, 18, 18, 0.08);
-  --shadow-md: 0 24px 50px rgba(18, 18, 18, 0.14);
+  --shadow-sm: 0 1px 3px rgba(20, 20, 19, 0.08);
+  --shadow-md: 0 4px 12px rgba(20, 20, 19, 0.05);
 
-  --radius-xl: 28px;
-  --radius-lg: 22px;
-  --radius-md: 16px;
-  --radius-sm: 12px;
+  --radius-xl: 16px;
+  --radius-lg: 12px;
+  --radius-md: 8px;
+  --radius-sm: 6px;
 }
 
 body.dark-theme {
-  --ink-1: #f7f4f0;
-  --ink-2: #d2cbc4;
-  --ink-3: #a9a39c;
-  --paper-1: #0f1317;
-  --paper-2: #141a20;
-  --paper-3: #1a2128;
+  --ink-1: #faf9f5;       /* on-dark */
+  --ink-2: #a09d96;       /* on-dark-soft */
+  --ink-3: #6c6a64;
+  
+  --paper-1: #181715;     /* surface-dark */
+  --paper-2: #1f1e1b;     /* surface-dark-soft */
+  --paper-3: #252320;     /* surface-dark-elevated */
 
-  --accent-1: #ff6b4a;
-  --accent-2: #f7a348;
-  --accent-3: rgba(255, 107, 74, 0.2);
-  --accent-strong: rgba(255, 107, 74, 0.4);
+  --accent-1: #cc785c;    /* primary stays coral! */
+  --accent-2: #a9583e;
+  --accent-3: #252320;
+  --accent-strong: rgba(204, 120, 92, 0.3);
 
-  --glass: rgba(20, 26, 32, 0.88);
-  --glass-strong: rgba(20, 26, 32, 0.96);
-  --border: rgba(247, 244, 240, 0.12);
-  --border-strong: rgba(247, 244, 240, 0.2);
+  --glass: rgba(24, 23, 21, 0.85);
+  --glass-strong: rgba(24, 23, 21, 0.95);
+  --border: #252320;
+  --border-strong: #3d3d3a;
 
-  --shadow-sm: 0 12px 28px rgba(0, 0, 0, 0.35);
-  --shadow-md: 0 28px 60px rgba(0, 0, 0, 0.45);
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 12px 24px rgba(0, 0, 0, 0.5);
 }
 
 html, body {
@@ -101,8 +103,8 @@ body {
 .header-left h1 {
   font-family: var(--font-display);
   font-size: 28px;
-  font-weight: 700;
-  letter-spacing: -0.03em;
+  font-weight: 400;
+  letter-spacing: -0.04em;
 }
 
 .header-left .subtitle {
@@ -212,7 +214,7 @@ body {
 
 .lesson-item h3 {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--ink-1);
   white-space: nowrap;
   overflow: hidden;
@@ -258,7 +260,8 @@ body {
 .book-details h2 {
   font-family: var(--font-display);
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 400;
+  letter-spacing: -0.02em;
   color: var(--ink-1);
 }
 
