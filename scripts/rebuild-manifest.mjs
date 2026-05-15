@@ -45,6 +45,17 @@ async function main() {
       }
     })
     
+    // NCE3 on mleo.site only has 55 lessons, but officially there are 60.
+    if (meta.key === 'NCE3' && lessons.length === 55) {
+      lessons.push(
+        { id: 56, file: '56－Our Neighbour, the River.lrc', label: 'Our neighbour, the river' },
+        { id: 57, file: '57－Back in the Old Country.lrc', label: 'Back in the old country' },
+        { id: 58, file: '58－A Spot of Bother.lrc', label: 'A spot of bother' },
+        { id: 59, file: '59－Collecting.lrc', label: 'Collecting' },
+        { id: 60, file: '60－Too Early and Too Late.lrc', label: 'Too early and too late' }
+      )
+    }
+    
     books.push({
       key: meta.key,
       title: meta.title,

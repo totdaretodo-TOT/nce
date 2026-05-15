@@ -1136,6 +1136,31 @@
           "id": 55,
           "file": "55－From the Earth, Greetings.lrc",
           "label": "From the Earth, Greetings"
+        },
+        {
+          "id": 56,
+          "file": "56－Our Neighbour, the River.lrc",
+          "label": "Our neighbour, the river"
+        },
+        {
+          "id": 57,
+          "file": "57－Back in the Old Country.lrc",
+          "label": "Back in the old country"
+        },
+        {
+          "id": 58,
+          "file": "58－A Spot of Bother.lrc",
+          "label": "A spot of bother"
+        },
+        {
+          "id": 59,
+          "file": "59－Collecting.lrc",
+          "label": "Collecting"
+        },
+        {
+          "id": 60,
+          "file": "60－Too Early and Too Late.lrc",
+          "label": "Too early and too late"
         }
       ]
     },

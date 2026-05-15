@@ -62,9 +62,19 @@ function _buildMleoFileUrl(bookKey, lessonFile, ext) {
 }
 
 export function buildAudioUrl(bookKey, lessonFile) {
+  const numMatch = lessonFile.match(/^(\d{2,3})/)
+  if (numMatch && bookKey === 'NCE3' && parseInt(numMatch[1], 10) > 55) {
+    // Fallback to newconceptenglish.com for missing NCE3 audio
+    return `https://newconceptenglish.com/nce-mp3-en-new/3-0${numMatch[1]}.mp3`
+  }
   return _buildMleoFileUrl(bookKey, lessonFile, 'mp3')
 }
 
 export function buildMleoLrcUrl(bookKey, lessonFile) {
+  const numMatch = lessonFile.match(/^(\d{2,3})/)
+  if (numMatch && bookKey === 'NCE3' && parseInt(numMatch[1], 10) > 55) {
+    // Fallback to magang0425 jsdelivr for missing NCE3 LRC
+    return `https://cdn.jsdelivr.net/gh/magang0425/NCE@master/NCE3/${encodeURIComponent(lessonFile)}`
+  }
   return _buildMleoFileUrl(bookKey, lessonFile, 'lrc')
 }
