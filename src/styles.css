@@ -78,7 +78,8 @@ body {
 #app {
   max-width: 1400px;
   margin: 0 auto;
-  min-height: 100dvh;
+  height: 100dvh;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   padding: 18px;
@@ -226,6 +227,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  min-height: 0;
 }
 
 .player-section {
