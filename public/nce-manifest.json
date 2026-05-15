@@ -1,7 +1,7 @@
 {
-  "version": 1,
-  "contentBase": "https://raw.githubusercontent.com/magang0425/NCE/master",
-  "attribution": "课文字幕来自 GitHub 仓库 magang0425/NCE（LRC 中英对照）；教材版权归原出版社所有。",
+  "version": 2,
+  "audioBase": "https://85.mleo.site",
+  "attribution": "课文和音频来自 85.mleo.site（1985 英音版）；词汇数据整理自教材；教材版权归原出版社所有。",
   "books": [
     {
       "key": "NCE1",
@@ -10,362 +10,362 @@
       "lessons": [
         {
           "id": 1,
-          "file": "001&002－Excuse Me.lrc",
+          "file": "001－Excuse Me.lrc",
           "label": "Excuse Me"
         },
         {
-          "id": 2,
-          "file": "003&004－Sorry, Sir..lrc",
-          "label": "Sorry, Sir."
-        },
-        {
           "id": 3,
-          "file": "005&006－Nice to Meet You..lrc",
-          "label": "Nice to Meet You."
-        },
-        {
-          "id": 4,
-          "file": "007&008－Are You a Teacher.lrc",
-          "label": "Are You a Teacher"
+          "file": "003－Sorry, Sir.lrc",
+          "label": "Sorry, Sir"
         },
         {
           "id": 5,
-          "file": "009&010－How Are You Today.lrc",
-          "label": "How Are You Today"
-        },
-        {
-          "id": 6,
-          "file": "011&012－Is This Your Shirt.lrc",
-          "label": "Is This Your Shirt"
+          "file": "005－Nice to Meet You.lrc",
+          "label": "Nice to Meet You"
         },
         {
           "id": 7,
-          "file": "013&014－A New Dress.lrc",
-          "label": "A New Dress"
-        },
-        {
-          "id": 8,
-          "file": "015&016－Your Passports, Please..lrc",
-          "label": "Your Passports, Please."
+          "file": "007－Are You a Teacher.lrc",
+          "label": "Are You a Teacher"
         },
         {
           "id": 9,
-          "file": "017&018－How do you do.lrc",
-          "label": "How do you do"
-        },
-        {
-          "id": 10,
-          "file": "019&020－Tired and Thirsty.lrc",
-          "label": "Tired and Thirsty"
+          "file": "009－How Are You Today.lrc",
+          "label": "How Are You Today"
         },
         {
           "id": 11,
-          "file": "021&022－Which Book.lrc",
-          "label": "Which Book"
-        },
-        {
-          "id": 12,
-          "file": "023&024－Which Glasses.lrc",
-          "label": "Which Glasses"
+          "file": "011－Is This Your Shirt.lrc",
+          "label": "Is This Your Shirt"
         },
         {
           "id": 13,
-          "file": "025&026－Mrs. Smith's Kitchen.lrc",
-          "label": "Mrs. Smith's Kitchen"
-        },
-        {
-          "id": 14,
-          "file": "027&028－Mrs. Smith's Living Room.lrc",
-          "label": "Mrs. Smith's Living Room"
+          "file": "013－A New Dress.lrc",
+          "label": "A New Dress"
         },
         {
           "id": 15,
-          "file": "029&030－Come In, Amy..lrc",
-          "label": "Come In, Amy."
-        },
-        {
-          "id": 16,
-          "file": "031&032－Where's Sally.lrc",
-          "label": "Where's Sally"
+          "file": "015－Your Passports, Please.lrc",
+          "label": "Your Passports, Please"
         },
         {
           "id": 17,
-          "file": "033&034－A Fine Day.lrc",
-          "label": "A Fine Day"
-        },
-        {
-          "id": 18,
-          "file": "035&036－Our Village.lrc",
-          "label": "Our Village"
+          "file": "017－How do you do.lrc",
+          "label": "How do you do"
         },
         {
           "id": 19,
-          "file": "037&038－Making a Bookcase.lrc",
-          "label": "Making a Bookcase"
-        },
-        {
-          "id": 20,
-          "file": "039&040－Don't Drop It.lrc",
-          "label": "Don't Drop It"
+          "file": "019－Tired and Thirsty.lrc",
+          "label": "Tired and Thirsty"
         },
         {
           "id": 21,
-          "file": "041&042－Penny's Bag.lrc",
-          "label": "Penny's Bag"
-        },
-        {
-          "id": 22,
-          "file": "043&044－Hurry Up.lrc",
-          "label": "Hurry Up"
+          "file": "021－Which Book.lrc",
+          "label": "Which Book"
         },
         {
           "id": 23,
-          "file": "045&046－The Boss's Letter.lrc",
-          "label": "The Boss's Letter"
-        },
-        {
-          "id": 24,
-          "file": "047&048－A Cup of Coffee.lrc",
-          "label": "A Cup of Coffee"
+          "file": "023－Which Glasses.lrc",
+          "label": "Which Glasses"
         },
         {
           "id": 25,
-          "file": "049&050－At the Butcher's.lrc",
-          "label": "At the Butcher's"
-        },
-        {
-          "id": 26,
-          "file": "051&052－A Pleasant Climate.lrc",
-          "label": "A Pleasant Climate"
+          "file": "025－Mrs. Smith's Kitchen.lrc",
+          "label": "Mrs. Smith's Kitchen"
         },
         {
           "id": 27,
-          "file": "053&054－An Interesting Climate.lrc",
-          "label": "An Interesting Climate"
-        },
-        {
-          "id": 28,
-          "file": "055&056－The Sawyer Family.lrc",
-          "label": "The Sawyer Family"
+          "file": "027－Mrs. Smith's Living Room.lrc",
+          "label": "Mrs. Smith's Living Room"
         },
         {
           "id": 29,
-          "file": "057&058－An Unusual Day.lrc",
-          "label": "An Unusual Day"
-        },
-        {
-          "id": 30,
-          "file": "059&060－Is That All.lrc",
-          "label": "Is That All"
+          "file": "029－Come In, Amy..lrc",
+          "label": "Come In, Amy."
         },
         {
           "id": 31,
-          "file": "061&062－A Bad Cold.lrc",
-          "label": "A Bad Cold"
-        },
-        {
-          "id": 32,
-          "file": "063&064－Thank You, Doctor..lrc",
-          "label": "Thank You, Doctor."
+          "file": "031－Where's Sally.lrc",
+          "label": "Where's Sally"
         },
         {
           "id": 33,
-          "file": "065&066－Not a Baby.lrc",
-          "label": "Not a Baby"
-        },
-        {
-          "id": 34,
-          "file": "067&068－The Weekend.lrc",
-          "label": "The Weekend"
+          "file": "033－A Fine Day.lrc",
+          "label": "A Fine Day"
         },
         {
           "id": 35,
-          "file": "069&070－The Car Race.lrc",
-          "label": "The Car Race"
-        },
-        {
-          "id": 36,
-          "file": "071&072－He's Awful.lrc",
-          "label": "He's Awful"
+          "file": "035－Our Village.lrc",
+          "label": "Our Village"
         },
         {
           "id": 37,
-          "file": "073&074－The Way to King Street.lrc",
-          "label": "The Way to King Street"
-        },
-        {
-          "id": 38,
-          "file": "075&076－Uncomfortable Shoes.lrc",
-          "label": "Uncomfortable Shoes"
+          "file": "037－Making a Bookcase.lrc",
+          "label": "Making a Bookcase"
         },
         {
           "id": 39,
-          "file": "077&078－Terrible Toothache.lrc",
-          "label": "Terrible Toothache"
-        },
-        {
-          "id": 40,
-          "file": "079&080－Carol's Shopping List.lrc",
-          "label": "Carol's Shopping List"
+          "file": "039－Don't Drop It.lrc",
+          "label": "Don't Drop It"
         },
         {
           "id": 41,
-          "file": "081&082－Roast Beef and Potatoes.lrc",
-          "label": "Roast Beef and Potatoes"
-        },
-        {
-          "id": 42,
-          "file": "083&084－Going on Holiday.lrc",
-          "label": "Going on Holiday"
+          "file": "041－Penny's Bag.lrc",
+          "label": "Penny's Bag"
         },
         {
           "id": 43,
-          "file": "085&086－Paris in the Spring..lrc",
-          "label": "Paris in the Spring."
-        },
-        {
-          "id": 44,
-          "file": "087&088－A Car Crash.lrc",
-          "label": "A Car Crash"
+          "file": "043－Hurry Up.lrc",
+          "label": "Hurry Up"
         },
         {
           "id": 45,
-          "file": "089&090－For Sale.lrc",
-          "label": "For Sale"
-        },
-        {
-          "id": 46,
-          "file": "091&092－Poor Ian.lrc",
-          "label": "Poor Ian"
+          "file": "045－The Boss's Letter.lrc",
+          "label": "The Boss's Letter"
         },
         {
           "id": 47,
-          "file": "093&094－Our New Neighbour.lrc",
-          "label": "Our New Neighbour"
-        },
-        {
-          "id": 48,
-          "file": "095&096－Tickets, Please..lrc",
-          "label": "Tickets, Please."
+          "file": "047－A Cup of Coffee.lrc",
+          "label": "A Cup of Coffee"
         },
         {
           "id": 49,
-          "file": "097&098－A Small Blue Case.lrc",
-          "label": "A Small Blue Case"
-        },
-        {
-          "id": 50,
-          "file": "099&100－Ow.lrc",
-          "label": "Ow"
+          "file": "049－At the Butcher's.lrc",
+          "label": "At the Butcher's"
         },
         {
           "id": 51,
-          "file": "101&102－A Card From Jimmy.lrc",
-          "label": "A Card From Jimmy"
-        },
-        {
-          "id": 52,
-          "file": "103&104－The French Test.lrc",
-          "label": "The French Test"
+          "file": "051－A Pleasant Climate.lrc",
+          "label": "A Pleasant Climate"
         },
         {
           "id": 53,
-          "file": "105&106－Full of Mistakes.lrc",
-          "label": "Full of Mistakes"
-        },
-        {
-          "id": 54,
-          "file": "107&108－It's Too Small..lrc",
-          "label": "It's Too Small."
+          "file": "053－An Interesting Climate.lrc",
+          "label": "An Interesting Climate"
         },
         {
           "id": 55,
-          "file": "109&110－A Good Idea.lrc",
-          "label": "A Good Idea"
-        },
-        {
-          "id": 56,
-          "file": "111&112－The Most Expensive Model.lrc",
-          "label": "The Most Expensive Model"
+          "file": "055－The Sawyer Family.lrc",
+          "label": "The Sawyer Family"
         },
         {
           "id": 57,
-          "file": "113&114－Small Change.lrc",
-          "label": "Small Change"
-        },
-        {
-          "id": 58,
-          "file": "115&116－Knock, Knock.lrc",
-          "label": "Knock, Knock"
+          "file": "057－An Unusual Day.lrc",
+          "label": "An Unusual Day"
         },
         {
           "id": 59,
-          "file": "117&118－Tommy's Breakfast.lrc",
-          "label": "Tommy's Breakfast"
-        },
-        {
-          "id": 60,
-          "file": "119&120－A True Story.lrc",
-          "label": "A True Story"
+          "file": "059－Is That All.lrc",
+          "label": "Is That All"
         },
         {
           "id": 61,
-          "file": "121&122－The Man in a Hat.lrc",
-          "label": "The Man in a Hat"
-        },
-        {
-          "id": 62,
-          "file": "123&124－A Trip to Australia.lrc",
-          "label": "A Trip to Australia"
+          "file": "061－A Bad Cold.lrc",
+          "label": "A Bad Cold"
         },
         {
           "id": 63,
-          "file": "125&126－Tea for Two.lrc",
-          "label": "Tea for Two"
-        },
-        {
-          "id": 64,
-          "file": "127&128－A Famous Actress.lrc",
-          "label": "A Famous Actress"
+          "file": "063－Thank You, Doctor..lrc",
+          "label": "Thank You, Doctor."
         },
         {
           "id": 65,
-          "file": "129&130－Seventy Miles an Hour.lrc",
-          "label": "Seventy Miles an Hour"
-        },
-        {
-          "id": 66,
-          "file": "131&132－Don't be So Sure.lrc",
-          "label": "Don't be So Sure"
+          "file": "065－Not a Baby.lrc",
+          "label": "Not a Baby"
         },
         {
           "id": 67,
-          "file": "133&134－Sensational News.lrc",
-          "label": "Sensational News"
-        },
-        {
-          "id": 68,
-          "file": "135&136－The Latest Report.lrc",
-          "label": "The Latest Report"
+          "file": "067－The Weekend.lrc",
+          "label": "The Weekend"
         },
         {
           "id": 69,
-          "file": "137&138－A Pleasant Dream.lrc",
-          "label": "A Pleasant Dream"
-        },
-        {
-          "id": 70,
-          "file": "139&140－Is That You, John.lrc",
-          "label": "Is That You, John"
+          "file": "069－The Car Race.lrc",
+          "label": "The Car Race"
         },
         {
           "id": 71,
-          "file": "141&142－Sally's First Train Ride.lrc",
+          "file": "071－He's Awful.lrc",
+          "label": "He's Awful"
+        },
+        {
+          "id": 73,
+          "file": "073－The Way to King Street.lrc",
+          "label": "The Way to King Street"
+        },
+        {
+          "id": 75,
+          "file": "075－Uncomfortable Shoes.lrc",
+          "label": "Uncomfortable Shoes"
+        },
+        {
+          "id": 77,
+          "file": "077－Terrible Toothache.lrc",
+          "label": "Terrible Toothache"
+        },
+        {
+          "id": 79,
+          "file": "079－Carol's Shopping List.lrc",
+          "label": "Carol's Shopping List"
+        },
+        {
+          "id": 81,
+          "file": "081－Roast Beef and Potatoes.lrc",
+          "label": "Roast Beef and Potatoes"
+        },
+        {
+          "id": 83,
+          "file": "083－Going on Holiday.lrc",
+          "label": "Going on Holiday"
+        },
+        {
+          "id": 85,
+          "file": "085－Paris in the Spring..lrc",
+          "label": "Paris in the Spring."
+        },
+        {
+          "id": 87,
+          "file": "087－A Car Crash.lrc",
+          "label": "A Car Crash"
+        },
+        {
+          "id": 89,
+          "file": "089－For Sale.lrc",
+          "label": "For Sale"
+        },
+        {
+          "id": 91,
+          "file": "091－Poor Ian.lrc",
+          "label": "Poor Ian"
+        },
+        {
+          "id": 93,
+          "file": "093－Our New Neighbour.lrc",
+          "label": "Our New Neighbour"
+        },
+        {
+          "id": 95,
+          "file": "095－Tickets, Please..lrc",
+          "label": "Tickets, Please."
+        },
+        {
+          "id": 97,
+          "file": "097－A Small Blue Case.lrc",
+          "label": "A Small Blue Case"
+        },
+        {
+          "id": 99,
+          "file": "099－Ow.lrc",
+          "label": "Ow"
+        },
+        {
+          "id": 101,
+          "file": "101－A Card From Jimmy.lrc",
+          "label": "A Card From Jimmy"
+        },
+        {
+          "id": 103,
+          "file": "103－The French Test.lrc",
+          "label": "The French Test"
+        },
+        {
+          "id": 105,
+          "file": "105－Full of Mistakes.lrc",
+          "label": "Full of Mistakes"
+        },
+        {
+          "id": 107,
+          "file": "107－It's Too Small..lrc",
+          "label": "It's Too Small."
+        },
+        {
+          "id": 109,
+          "file": "109－A Good Idea.lrc",
+          "label": "A Good Idea"
+        },
+        {
+          "id": 111,
+          "file": "111－The Most Expensive Model.lrc",
+          "label": "The Most Expensive Model"
+        },
+        {
+          "id": 113,
+          "file": "113－Small Change.lrc",
+          "label": "Small Change"
+        },
+        {
+          "id": 115,
+          "file": "115－Knock, Knock.lrc",
+          "label": "Knock, Knock"
+        },
+        {
+          "id": 117,
+          "file": "117－Tommy's Breakfast.lrc",
+          "label": "Tommy's Breakfast"
+        },
+        {
+          "id": 119,
+          "file": "119－A True Story.lrc",
+          "label": "A True Story"
+        },
+        {
+          "id": 121,
+          "file": "121－The Man in a Hat.lrc",
+          "label": "The Man in a Hat"
+        },
+        {
+          "id": 123,
+          "file": "123－A Trip to Australia.lrc",
+          "label": "A Trip to Australia"
+        },
+        {
+          "id": 125,
+          "file": "125－Tea for Two.lrc",
+          "label": "Tea for Two"
+        },
+        {
+          "id": 127,
+          "file": "127－A Famous Actress.lrc",
+          "label": "A Famous Actress"
+        },
+        {
+          "id": 129,
+          "file": "129－Seventy Miles an Hour.lrc",
+          "label": "Seventy Miles an Hour"
+        },
+        {
+          "id": 131,
+          "file": "131－Don't be So Sure.lrc",
+          "label": "Don't be So Sure"
+        },
+        {
+          "id": 133,
+          "file": "133－Sensational News.lrc",
+          "label": "Sensational News"
+        },
+        {
+          "id": 135,
+          "file": "135－The Latest Report.lrc",
+          "label": "The Latest Report"
+        },
+        {
+          "id": 137,
+          "file": "137－A Pleasant Dream.lrc",
+          "label": "A Pleasant Dream"
+        },
+        {
+          "id": 139,
+          "file": "139－Is That You, John.lrc",
+          "label": "Is That You, John"
+        },
+        {
+          "id": 141,
+          "file": "141－Sally's First Train Ride.lrc",
           "label": "Sally's First Train Ride"
         },
         {
-          "id": 72,
-          "file": "143&144－A Walk Through the Woods.lrc",
+          "id": 143,
+          "file": "143－A Walk Through the Woods.lrc",
           "label": "A Walk Through the Woods"
         }
       ]
@@ -737,8 +737,8 @@
         },
         {
           "id": 73,
-          "file": "73－The Record-Holder.lrc",
-          "label": "The Record-Holder"
+          "file": "73－The Record.lrc",
+          "label": "The Record"
         },
         {
           "id": 74,
@@ -889,13 +889,13 @@
         },
         {
           "id": 6,
-          "file": "06－Smash-and-Grab.lrc",
-          "label": "Smash-and-Grab"
+          "file": "06－Smash and Grab.lrc",
+          "label": "Smash and Grab"
         },
         {
           "id": 7,
-          "file": "07－Mutilated Ladies.lrc",
-          "label": "Mutilated Ladies"
+          "file": "07－Crazy.lrc",
+          "label": "Crazy"
         },
         {
           "id": 8,
@@ -904,8 +904,8 @@
         },
         {
           "id": 9,
-          "file": "09－Flying Cats.lrc",
-          "label": "Flying Cats"
+          "file": "09－A Trip to Mars.lrc",
+          "label": "A Trip to Mars"
         },
         {
           "id": 10,
@@ -934,8 +934,8 @@
         },
         {
           "id": 15,
-          "file": "15－Fifty Pence Worth of Trouble.lrc",
-          "label": "Fifty Pence Worth of Trouble"
+          "file": "15－Sixpence Worth of Trouble.lrc",
+          "label": "Sixpence Worth of Trouble"
         },
         {
           "id": 16,
@@ -944,8 +944,8 @@
         },
         {
           "id": 17,
-          "file": "17－The Longest Suspension Bridge in the World.lrc",
-          "label": "The Longest Suspension Bridge in the World"
+          "file": "17－The Greatest Bridge in the World.lrc",
+          "label": "The Greatest Bridge in the World"
         },
         {
           "id": 18,
@@ -974,8 +974,8 @@
         },
         {
           "id": 23,
-          "file": "23－One Man's Meat is Another Man's Poison.lrc",
-          "label": "One Man's Meat is Another Man's Poison"
+          "file": "23－One Man's Meat Is Another Man's Poison.lrc",
+          "label": "One Man's Meat Is Another Man's Poison"
         },
         {
           "id": 24,
@@ -989,8 +989,8 @@
         },
         {
           "id": 26,
-          "file": "26－Wanted a Large Biscuit Tin.lrc",
-          "label": "Wanted a Large Biscuit Tin"
+          "file": "26－Wanted: A Large Biscuit Tin.lrc",
+          "label": "Wanted: A Large Biscuit Tin"
         },
         {
           "id": 27,
@@ -999,8 +999,8 @@
         },
         {
           "id": 28,
-          "file": "28－Five Pounds Too Dear.lrc",
-          "label": "Five Pounds Too Dear"
+          "file": "28－A Pound Too Dear.lrc",
+          "label": "A Pound Too Dear"
         },
         {
           "id": 29,
@@ -1034,8 +1034,8 @@
         },
         {
           "id": 35,
-          "file": "35－Justice was Done.lrc",
-          "label": "Justice was Done"
+          "file": "35－Justice Was Done.lrc",
+          "label": "Justice Was Done"
         },
         {
           "id": 36,
@@ -1044,8 +1044,8 @@
         },
         {
           "id": 37,
-          "file": "37－The Westhaven Express.lrc",
-          "label": "The Westhaven Express"
+          "file": "37－The West Haven Express.lrc",
+          "label": "The West Haven Express"
         },
         {
           "id": 38,
@@ -1059,8 +1059,8 @@
         },
         {
           "id": 40,
-          "file": "40－Who's Who.lrc",
-          "label": "Who's Who"
+          "file": "40－Who's Who?.lrc",
+          "label": "Who's Who?"
         },
         {
           "id": 41,
@@ -1069,8 +1069,8 @@
         },
         {
           "id": 42,
-          "file": "42－Modern Cavemen.lrc",
-          "label": "Modern Cavemen"
+          "file": "42－Modern Caveman.lrc",
+          "label": "Modern Caveman"
         },
         {
           "id": 43,
@@ -1094,8 +1094,8 @@
         },
         {
           "id": 47,
-          "file": "47－Too High a Price.lrc",
-          "label": "Too High a Price"
+          "file": "47－Through the Earth's Crust.lrc",
+          "label": "Through the Earth's Crust"
         },
         {
           "id": 48,
@@ -1114,13 +1114,13 @@
         },
         {
           "id": 51,
-          "file": "51－Predicting the Future.lrc",
-          "label": "Predicting the Future"
+          "file": "51－Automation.lrc",
+          "label": "Automation"
         },
         {
           "id": 52,
-          "file": "52－Mud is Mud.lrc",
-          "label": "Mud is Mud"
+          "file": "52－Mud Is Mud.lrc",
+          "label": "Mud Is Mud"
         },
         {
           "id": 53,
@@ -1129,38 +1129,13 @@
         },
         {
           "id": 54,
-          "file": "54－Instinct or Cleverness.lrc",
-          "label": "Instinct or Cleverness"
+          "file": "54－Instinct or Cleverness?.lrc",
+          "label": "Instinct or Cleverness?"
         },
         {
           "id": 55,
-          "file": "55－From the Earth Greetings.lrc",
-          "label": "From the Earth Greetings"
-        },
-        {
-          "id": 56,
-          "file": "56－Our Neighbour, the River.lrc",
-          "label": "Our Neighbour, the River"
-        },
-        {
-          "id": 57,
-          "file": "57－Back in the Old Country.lrc",
-          "label": "Back in the Old Country"
-        },
-        {
-          "id": 58,
-          "file": "58－A Spot of Bother.lrc",
-          "label": "A Spot of Bother"
-        },
-        {
-          "id": 59,
-          "file": "59－Collecting.lrc",
-          "label": "Collecting"
-        },
-        {
-          "id": 60,
-          "file": "60－Too Early and Too Late.lrc",
-          "label": "Too Early and Too Late"
+          "file": "55－From the Earth, Greetings.lrc",
+          "label": "From the Earth, Greetings"
         }
       ]
     },
@@ -1191,168 +1166,168 @@
         },
         {
           "id": 5,
-          "file": "05－Youth.lrc",
-          "label": "Youth"
+          "file": "05－Gorilla.lrc",
+          "label": "Gorilla"
         },
         {
           "id": 6,
-          "file": "06－The Sporting Spirit.lrc",
-          "label": "The Sporting Spirit"
+          "file": "06－Youth.lrc",
+          "label": "Youth"
         },
         {
           "id": 7,
-          "file": "07－Bats.lrc",
-          "label": "Bats"
+          "file": "07－The Sporting Spirit.lrc",
+          "label": "The Sporting Spirit"
         },
         {
           "id": 8,
-          "file": "08－Trading Standards.lrc",
-          "label": "Trading Standards"
+          "file": "08－Employment of Family.lrc",
+          "label": "Employment of Family"
         },
         {
           "id": 9,
-          "file": "09－Royal Espionage.lrc",
-          "label": "Royal Espionage"
+          "file": "09－Bats.lrc",
+          "label": "Bats"
         },
         {
           "id": 10,
-          "file": "10－Silicon Valley.lrc",
-          "label": "Silicon Valley"
+          "file": "10－Creative Men.lrc",
+          "label": "Creative Men"
         },
         {
           "id": 11,
-          "file": "11－How to Grow Old.lrc",
-          "label": "How to Grow Old"
+          "file": "11－Royal Espionage.lrc",
+          "label": "Royal Espionage"
         },
         {
           "id": 12,
-          "file": "12－Banks and Their Customers.lrc",
-          "label": "Banks and Their Customers"
+          "file": "12－The Language of Hollywood.lrc",
+          "label": "The Language of Hollywood"
         },
         {
           "id": 13,
-          "file": "13－The Search for Oil.lrc",
-          "label": "The Search for Oil"
+          "file": "13－Oxford.lrc",
+          "label": "Oxford"
         },
         {
           "id": 14,
-          "file": "14－The Butterfly Effect.lrc",
-          "label": "The Butterfly Effect"
+          "file": "14－How to Grow Old.lrc",
+          "label": "How to Grow Old"
         },
         {
           "id": 15,
-          "file": "15－Secrecy in Industry.lrc",
-          "label": "Secrecy in Industry"
+          "file": "15－Banks and Their Customers.lrc",
+          "label": "Banks and Their Customers"
         },
         {
           "id": 16,
-          "file": "16－The Modern City.lrc",
-          "label": "The Modern City"
+          "file": "16－The Search for Oil.lrc",
+          "label": "The Search for Oil"
         },
         {
           "id": 17,
-          "file": "17－A Man-made Disease.lrc",
-          "label": "A Man-made Disease"
+          "file": "17－Intelligence.lrc",
+          "label": "Intelligence"
         },
         {
           "id": 18,
-          "file": "18－Porpoises.lrc",
-          "label": "Porpoises"
+          "file": "18－Secrecy in Industry.lrc",
+          "label": "Secrecy in Industry"
         },
         {
           "id": 19,
-          "file": "19－The Stuff of Dreams.lrc",
-          "label": "The Stuff of Dreams"
+          "file": "19－Gentleman.lrc",
+          "label": "Gentleman"
         },
         {
           "id": 20,
-          "file": "20－Snake Poison.lrc",
-          "label": "Snake Poison"
+          "file": "20－The Modern City.lrc",
+          "label": "The Modern City"
         },
         {
           "id": 21,
-          "file": "21－William S. Hart and the Early Western Film.lrc",
-          "label": "William S. Hart and the Early Western Film"
+          "file": "21－A Man Made Disease.lrc",
+          "label": "A Man Made Disease"
         },
         {
           "id": 22,
-          "file": "22－Knowledge and Progress.lrc",
-          "label": "Knowledge and Progress"
+          "file": "22－Porpoises.lrc",
+          "label": "Porpoises"
         },
         {
           "id": 23,
-          "file": "23－Bird Flight.lrc",
-          "label": "Bird Flight"
+          "file": "23－The Stuff of Dreams.lrc",
+          "label": "The Stuff of Dreams"
         },
         {
           "id": 24,
-          "file": "24－Beauty.lrc",
-          "label": "Beauty"
+          "file": "24－Going Out for a Walk.lrc",
+          "label": "Going Out for a Walk"
         },
         {
           "id": 25,
-          "file": "25－Non-Auditory Effects of Noise.lrc",
-          "label": "Non-Auditory Effects of Noise"
+          "file": "25－Snake Poison.lrc",
+          "label": "Snake Poison"
         },
         {
           "id": 26,
-          "file": "26－The Past Life of the Earth.lrc",
-          "label": "The Past Life of the Earth"
+          "file": "26－William S. Hart.lrc",
+          "label": "William S. Hart"
         },
         {
           "id": 27,
-          "file": "27－The vasa.lrc",
-          "label": "The vasa"
+          "file": "27－Knowledge and Progress.lrc",
+          "label": "Knowledge and Progress"
         },
         {
           "id": 28,
-          "file": "28－Patients and Doctors.lrc",
-          "label": "Patients and Doctors"
+          "file": "28－Bird Flight.lrc",
+          "label": "Bird Flight"
         },
         {
           "id": 29,
-          "file": "29－The Hovercraft.lrc",
-          "label": "The Hovercraft"
+          "file": "29－Beauty.lrc",
+          "label": "Beauty"
         },
         {
           "id": 30,
-          "file": "30－Exploring the Sea-Floor.lrc",
-          "label": "Exploring the Sea-Floor"
+          "file": "30－Progress of Civilization.lrc",
+          "label": "Progress of Civilization"
         },
         {
           "id": 31,
-          "file": "31－The Sculptor Speaks.lrc",
-          "label": "The Sculptor Speaks"
+          "file": "31－Non-Auditory Effects of Noise.lrc",
+          "label": "Non-Auditory Effects of Noise"
         },
         {
           "id": 32,
-          "file": "32－Galileo Reborn.lrc",
-          "label": "Galileo Reborn"
+          "file": "32－The Past Life of the Earth.lrc",
+          "label": "The Past Life of the Earth"
         },
         {
           "id": 33,
-          "file": "33－Education.lrc",
-          "label": "Education"
+          "file": "33－The ‘Vasa’.lrc",
+          "label": "The ‘Vasa’"
         },
         {
           "id": 34,
-          "file": "34－Adolescence.lrc",
-          "label": "Adolescence"
+          "file": "34－Patients and Doctors.lrc",
+          "label": "Patients and Doctors"
         },
         {
           "id": 35,
-          "file": "35－Space Odyssey.lrc",
-          "label": "Space Odyssey"
+          "file": "35－The Hovercraft.lrc",
+          "label": "The Hovercraft"
         },
         {
           "id": 36,
-          "file": "36－The Cost of Government.lrc",
-          "label": "The Cost of Government"
+          "file": "36－The Cost of Living.lrc",
+          "label": "The Cost of Living"
         },
         {
           "id": 37,
-          "file": "37－The Process of Ageing.lrc",
-          "label": "The Process of Ageing"
+          "file": "37－What Every Writer Wants.lrc",
+          "label": "What Every Writer Wants"
         },
         {
           "id": 38,
@@ -1361,53 +1336,113 @@
         },
         {
           "id": 39,
-          "file": "39－What Every Writer Wants.lrc",
-          "label": "What Every Writer Wants"
-        },
-        {
-          "id": 40,
-          "file": "40－Waves.lrc",
+          "file": "39－Waves.lrc",
           "label": "Waves"
         },
         {
+          "id": 40,
+          "file": "40－Silicon Valley.lrc",
+          "label": "Silicon Valley"
+        },
+        {
           "id": 41,
-          "file": "41－Training Elephants.lrc",
-          "label": "Training Elephants"
+          "file": "41－Illusions of Pastoral Peace.lrc",
+          "label": "Illusions of Pastoral Peace"
         },
         {
           "id": 42,
-          "file": "42－Recording an Earthquake.lrc",
-          "label": "Recording an Earthquake"
+          "file": "42－Adolescence.lrc",
+          "label": "Adolescence"
         },
         {
           "id": 43,
-          "file": "43－Are There Strangers in Space.lrc",
-          "label": "Are There Strangers in Space"
+          "file": "43－Sources of Power.lrc",
+          "label": "Sources of Power"
         },
         {
           "id": 44,
-          "file": "44－Patterns of Culture.lrc",
-          "label": "Patterns of Culture"
+          "file": "44－The Cost of Government.lrc",
+          "label": "The Cost of Government"
         },
         {
           "id": 45,
-          "file": "45－Of Men and Galaxies.lrc",
-          "label": "Of Men and Galaxies"
+          "file": "45－The Process of Aging.lrc",
+          "label": "The Process of Aging"
         },
         {
           "id": 46,
-          "file": "46－Hobbies.lrc",
-          "label": "Hobbies"
+          "file": "46－Urban Growth.lrc",
+          "label": "Urban Growth"
         },
         {
           "id": 47,
-          "file": "47－The Great Escape.lrc",
-          "label": "The Great Escape"
+          "file": "47－Modern Plato.lrc",
+          "label": "Modern Plato"
         },
         {
           "id": 48,
-          "file": "48－Planning a Share Portfolio.lrc",
-          "label": "Planning a Share Portfolio"
+          "file": "48－What Every Writer Wants.lrc",
+          "label": "What Every Writer Wants"
+        },
+        {
+          "id": 49,
+          "file": "49－Balloon Astronomy.lrc",
+          "label": "Balloon Astronomy"
+        },
+        {
+          "id": 50,
+          "file": "50－British Canals.lrc",
+          "label": "British Canals"
+        },
+        {
+          "id": 51,
+          "file": "51－Training Elephants.lrc",
+          "label": "Training Elephants"
+        },
+        {
+          "id": 52,
+          "file": "52－Recording an Earthquake.lrc",
+          "label": "Recording an Earthquake"
+        },
+        {
+          "id": 53,
+          "file": "53－The French Foreign Legion.lrc",
+          "label": "The French Foreign Legion"
+        },
+        {
+          "id": 54,
+          "file": "54－Are There Strangers in Space.lrc",
+          "label": "Are There Strangers in Space"
+        },
+        {
+          "id": 55,
+          "file": "55－Patterns of Culture.lrc",
+          "label": "Patterns of Culture"
+        },
+        {
+          "id": 56,
+          "file": "56－Technological Explosion.lrc",
+          "label": "Technological Explosion"
+        },
+        {
+          "id": 57,
+          "file": "57－Of Man and Galaxies.lrc",
+          "label": "Of Man and Galaxies"
+        },
+        {
+          "id": 58,
+          "file": "58－Hobbies.lrc",
+          "label": "Hobbies"
+        },
+        {
+          "id": 59,
+          "file": "59－The Great Escape.lrc",
+          "label": "The Great Escape"
+        },
+        {
+          "id": 60,
+          "file": "60－On Moral Courage.lrc",
+          "label": "On Moral Courage"
         }
       ]
     }
