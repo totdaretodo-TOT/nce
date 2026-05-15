@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
-import { parseLrc, buildLrcUrl, buildAudioUrl } from './lrc.js'
+import { parseLrc, buildLrcUrl, buildAudioUrl, buildMleoLrcUrl } from './lrc.js'
 
 function App() {
   const [manifest, setManifest] = useState(null)
@@ -85,7 +85,7 @@ function App() {
   }, [])
 
   useEffect(() => {
-    if (!manifest?.contentBase || !currentBook || !currentLesson?.file) {
+    if (!currentBook || !currentLesson?.file) {
       setLrcPayload({ loading: false, lyrics: [], meta: {}, error: null })
       return undefined
     }
@@ -98,7 +98,12 @@ function App() {
     }
 
     let cancelled = false
-    const url = buildLrcUrl(manifest.contentBase, currentBook.key, currentLesson.file)
+    // Use mleo.site LRC (synced with the audio from same CDN)
+    const url = buildMleoLrcUrl(currentBook.key, currentLesson.file)
+    if (!url) {
+      setLrcPayload({ loading: false, lyrics: [], meta: {}, error: '无法构建字幕URL' })
+      return undefined
+    }
     setLrcPayload({ loading: true, lyrics: [], meta: {}, error: null })
 
     fetch(url)

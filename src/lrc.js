@@ -46,17 +46,25 @@ export function buildLrcUrl(contentBase, bookKey, fileName) {
 }
 
 /**
- * Build audio URL from mleo.site CDN.
- * Audio format: https://85.mleo.site/{bookKey}/{bookKey}(1985 British accent)_{lessonNum}.mp3
- * For NCE2-4 the pattern is similar but uses "1985 British accent" for all.
+ * Build media URLs from mleo.site CDN.
+ * Both audio (.mp3) and LRC (.lrc) live on the same CDN with the same naming:
+ *   https://85.mleo.site/{bookKey}/{bookKey}(1985 British accent)_{lessonNum}.{ext}
  */
 const AUDIO_BASE = 'https://85.mleo.site'
 
-export function buildAudioUrl(bookKey, lessonFile) {
-  // Extract lesson number from lrc filename, e.g. "001&002－Excuse Me.lrc" -> "001"
+function _buildMleoFileUrl(bookKey, lessonFile, ext) {
+  // Extract lesson number from manifest filename, e.g. "001&002－Excuse Me.lrc" -> "001"
   const numMatch = lessonFile.match(/^(\d{2,3})/)
   if (!numMatch) return null
   const num = numMatch[1]
-  const encoded = encodeURIComponent(`${bookKey}(1985 British accent)_${num}.mp3`)
+  const encoded = encodeURIComponent(`${bookKey}(1985 British accent)_${num}.${ext}`)
   return `${AUDIO_BASE}/${bookKey}/${encoded}`
+}
+
+export function buildAudioUrl(bookKey, lessonFile) {
+  return _buildMleoFileUrl(bookKey, lessonFile, 'mp3')
+}
+
+export function buildMleoLrcUrl(bookKey, lessonFile) {
+  return _buildMleoFileUrl(bookKey, lessonFile, 'lrc')
 }
