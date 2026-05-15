@@ -186,6 +186,16 @@ function App() {
     }
   }, [isPlaying])
 
+  // Auto-scroll to active lyric
+  useEffect(() => {
+    if (activeTab !== 'lyrics' || currentLyricIndex === -1) return
+    const activeLine = document.querySelector('.lyric-line.active')
+    if (activeLine) {
+      // scrollIntoView will scroll the closest scrollable parent (main-content)
+      activeLine.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    }
+  }, [currentLyricIndex, activeTab])
+
   const handleLessonSelect = (index) => {
     const audio = audioRef.current
     if (audio) {
