@@ -14,6 +14,7 @@ function App() {
   const [activeTab, setActiveTab] = useState('lyrics')
   const [quizAnswers, setQuizAnswers] = useState({})
   const [darkTheme, setDarkTheme] = useState(false)
+  const [fontScale, setFontScale] = useState(1.0)
   const [lrcPayload, setLrcPayload] = useState({
     loading: false,
     lyrics: [],
@@ -49,8 +50,15 @@ function App() {
   }, [darkTheme])
 
   useEffect(() => {
+    document.documentElement.style.setProperty('--content-font-scale', fontScale)
+    localStorage.setItem('nce-font-scale', fontScale)
+  }, [fontScale])
+
+  useEffect(() => {
     const savedTheme = localStorage.getItem('nce-theme')
     if (savedTheme === 'dark') setDarkTheme(true)
+    const savedScale = localStorage.getItem('nce-font-scale')
+    if (savedScale) setFontScale(parseFloat(savedScale))
   }, [])
 
   const loadManifest = () => {
@@ -366,7 +374,11 @@ function App() {
               </option>
             ))}
           </select>
-          <button type="button" className="theme-toggle" onClick={cycleTheme}>
+          <div className="font-controls">
+            <button type="button" className="font-btn" onClick={() => setFontScale(s => Math.max(0.8, s - 0.1))} title="缩小字号">A-</button>
+            <button type="button" className="font-btn" onClick={() => setFontScale(s => Math.min(1.8, s + 0.1))} title="放大字号">A+</button>
+          </div>
+          <button type="button" className="theme-toggle" onClick={cycleTheme} title="切换明暗主题">
             {darkTheme ? '☀️' : '🌙'}
           </button>
         </div>

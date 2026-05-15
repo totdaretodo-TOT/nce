@@ -12,6 +12,8 @@
   --font-display: "Copernicus", "Tiempos Headline", "Cormorant Garamond", serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
+  --content-font-scale: 1;
+
   --ink-1: #141413;
   --ink-2: #3d3d3a;
   --ink-3: #8e8b82;
@@ -155,6 +157,36 @@ body {
 .theme-toggle:hover {
   background: var(--accent-3);
   border-color: var(--accent-1);
+}
+
+.font-controls {
+  display: flex;
+  align-items: center;
+  background: var(--paper-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.font-btn {
+  background: transparent;
+  border: none;
+  padding: 0 12px;
+  height: 40px;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink-1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.font-btn:hover {
+  background: var(--paper-3);
+}
+
+.font-btn:first-child {
+  border-right: 1px solid var(--border);
 }
 
 .container {
@@ -457,8 +489,8 @@ body {
 
 .lyric-text {
   font-family: var(--font-display);
-  font-size: 17px;
-  font-weight: 600;
+  font-size: calc(18px * var(--content-font-scale));
+  font-weight: 400;
   color: var(--ink-1);
   letter-spacing: -0.01em;
 }
@@ -468,7 +500,7 @@ body {
 }
 
 .lyric-translation {
-  font-size: 12px;
+  font-size: calc(14px * var(--content-font-scale));
   color: var(--ink-2);
   margin-top: 4px;
 }
@@ -535,14 +567,14 @@ body {
 
 .word-text {
   font-family: var(--font-display);
-  font-size: 22px;
-  font-weight: 700;
+  font-size: calc(24px * var(--content-font-scale));
+  font-weight: 400;
   color: var(--ink-1);
 }
 
 .word-phonetic {
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: calc(14px * var(--content-font-scale));
   color: var(--ink-3);
   margin-left: 10px;
 }
@@ -593,14 +625,16 @@ body {
   border-radius: 4px;
   background: var(--accent-1);
   color: white;
-  font-size: 11px;
+  font-size: calc(13px * var(--content-font-scale));
   font-weight: 600;
   letter-spacing: 0.05em;
 }
 
 .word-def {
-  font-size: 15px;
+  font-size: calc(16px * var(--content-font-scale));
   color: var(--ink-1);
+  line-height: 1.4;
+  word-break: break-word;
 }
 
 .word-example {
@@ -609,7 +643,7 @@ body {
   border-radius: var(--radius-sm);
   background: var(--paper-3);
   font-style: italic;
-  font-size: 13px;
+  font-size: calc(14px * var(--content-font-scale));
   color: var(--ink-2);
 }
 .quiz-item {
@@ -621,8 +655,8 @@ body {
 }
 
 .quiz-question {
-  font-size: 15px;
-  font-weight: 600;
+  font-size: calc(16px * var(--content-font-scale));
+  font-weight: 500;
   color: var(--ink-1);
   margin-bottom: 12px;
 }
@@ -640,7 +674,7 @@ body {
   background: var(--paper-3);
   cursor: pointer;
   transition: all 0.2s ease;
-  font-size: 14px;
+  font-size: calc(15px * var(--content-font-scale));
 }
 
 .quiz-option:hover {
@@ -660,9 +694,10 @@ body {
 
 .quiz-result {
   margin-top: 12px;
-  padding: 10px;
+  padding: 12px;
   border-radius: var(--radius-sm);
-  font-size: 13px;
+  font-size: calc(14px * var(--content-font-scale));
+  line-height: 1.5;
 }
 
 .quiz-result.correct {
