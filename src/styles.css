@@ -228,6 +228,8 @@ body {
   flex-direction: column;
   gap: 12px;
   min-height: 0;
+  overflow-y: auto;
+  padding-right: 4px; /* leave space for scrollbar */
 }
 
 .player-section {
@@ -420,9 +422,6 @@ body {
 }
 
 .lyrics-section {
-  flex: 1;
-  min-height: 0;
-  overflow-y: auto;
   border-radius: 0 0 var(--radius-lg) var(--radius-lg);
   border: 1px solid var(--border);
   border-top: none;
