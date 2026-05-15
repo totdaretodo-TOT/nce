@@ -1,5 +1,5 @@
-import { useState, useEffect, useRef } from 'react'
-import { parseLrc, buildLrcUrl } from './lrc.js'
+import { useState, useEffect, useRef, useCallback } from 'react'
+import { parseLrc, buildLrcUrl, buildAudioUrl } from './lrc.js'
 
 function App() {
   const [manifest, setManifest] = useState(null)
@@ -22,7 +22,12 @@ function App() {
   })
 
   const lrcCacheRef = useRef({})
+  const audioRef = useRef(null)
   const [vocabData, setVocabData] = useState(null)
+  const [audioUrl, setAudioUrl] = useState(null)
+  const [currentTime, setCurrentTime] = useState(0)
+  const [duration, setDuration] = useState(0)
+  const [audioLoading, setAudioLoading] = useState(false)
 
   const books = manifest?.books ?? []
   const currentBook = books.find((b) => b.key === currentBookKey) || books[0]
@@ -122,32 +127,77 @@ function App() {
     }
   }, [manifest, currentBookKey, currentLessonIndex, currentBook, currentLesson?.file])
 
+  // Build audio URL when lesson changes
   useEffect(() => {
-    if (!isPlaying) return undefined
-    if (currentLyricIndex < 0) return undefined
-    const len = lyrics.length
-    if (len === 0) return undefined
-    const tick = 2500 / playbackRate
-    const id = window.setInterval(() => {
-      setCurrentLyricIndex((prev) => {
-        if (prev < 0) return prev
-        if (prev < len - 1) return prev + 1
-        setIsPlaying(false)
-        return -1
-      })
-    }, tick)
-    return () => window.clearInterval(id)
-  }, [isPlaying, playbackRate, lyrics.length])
+    if (!currentBook || !currentLesson?.file) {
+      setAudioUrl(null)
+      return
+    }
+    const url = buildAudioUrl(currentBook.key, currentLesson.file)
+    setAudioUrl(url)
+  }, [currentBook, currentLesson?.file])
+
+  // Load audio when URL changes
+  useEffect(() => {
+    const audio = audioRef.current
+    if (!audio || !audioUrl) return
+    setAudioLoading(true)
+    audio.src = audioUrl
+    audio.playbackRate = playbackRate
+    audio.load()
+  }, [audioUrl])
+
+  // Sync playback rate to audio element
+  useEffect(() => {
+    const audio = audioRef.current
+    if (audio) audio.playbackRate = playbackRate
+  }, [playbackRate])
+
+  // Audio timeupdate -> sync lyric index
+  const handleTimeUpdate = useCallback(() => {
+    const audio = audioRef.current
+    if (!audio || lyrics.length === 0) return
+    const t = audio.currentTime
+    setCurrentTime(t)
+    // Find the last lyric whose time <= current audio time
+    let idx = -1
+    for (let i = lyrics.length - 1; i >= 0; i--) {
+      if (lyrics[i].time <= t) {
+        idx = i
+        break
+      }
+    }
+    if (idx >= 0) setCurrentLyricIndex(idx)
+  }, [lyrics])
+
+  // Play/pause sync
+  useEffect(() => {
+    const audio = audioRef.current
+    if (!audio) return
+    if (isPlaying) {
+      audio.play().catch(() => {})
+    } else {
+      audio.pause()
+    }
+  }, [isPlaying])
 
   const handleLessonSelect = (index) => {
+    const audio = audioRef.current
+    if (audio) {
+      audio.pause()
+      audio.currentTime = 0
+    }
     setCurrentLessonIndex(index)
     setCurrentLyricIndex(-1)
     setIsPlaying(false)
+    setCurrentTime(0)
+    setDuration(0)
     setQuizAnswers({})
   }
 
   const handlePlayPause = () => {
     if (lrcPayload.loading || lrcPayload.error || lyrics.length === 0) return
+    if (audioLoading) return
     if (isPlaying) {
       setIsPlaying(false)
     } else {
@@ -160,6 +210,10 @@ function App() {
 
   const handleLyricClick = (index) => {
     if (lrcPayload.loading || lrcPayload.error) return
+    const audio = audioRef.current
+    if (audio && lyrics[index]?.time != null) {
+      audio.currentTime = lyrics[index].time
+    }
     setCurrentLyricIndex(index)
     setIsPlaying(true)
   }
@@ -174,6 +228,21 @@ function App() {
     if (currentBook && currentLessonIndex < currentBook.lessons.length - 1) {
       handleLessonSelect(currentLessonIndex + 1)
     }
+  }
+
+  const formatTime = (sec) => {
+    if (!sec || !isFinite(sec)) return '0:00'
+    const m = Math.floor(sec / 60)
+    const s = Math.floor(sec % 60)
+    return `${m}:${s.toString().padStart(2, '0')}`
+  }
+
+  const handleProgressClick = (e) => {
+    const audio = audioRef.current
+    if (!audio || !duration) return
+    const rect = e.currentTarget.getBoundingClientRect()
+    const pct = (e.clientX - rect.left) / rect.width
+    audio.currentTime = pct * duration
   }
 
   const cycleSpeed = () => {
@@ -234,6 +303,20 @@ function App() {
 
   return (
     <>
+      <audio
+        ref={audioRef}
+        onTimeUpdate={handleTimeUpdate}
+        onLoadedMetadata={() => {
+          const audio = audioRef.current
+          if (audio) setDuration(audio.duration)
+          setAudioLoading(false)
+        }}
+        onEnded={() => {
+          setIsPlaying(false)
+          setCurrentLyricIndex(-1)
+        }}
+        onError={() => setAudioLoading(false)}
+      />
       <header className="header">
         <div className="header-left">
           <h1>新概念英语</h1>
@@ -320,9 +403,9 @@ function App() {
                   type="button"
                   className="play-btn"
                   onClick={handlePlayPause}
-                  disabled={lrcPayload.loading || !!lrcPayload.error || lyrics.length === 0}
+                  disabled={lrcPayload.loading || !!lrcPayload.error || lyrics.length === 0 || audioLoading}
                 >
-                  {isPlaying ? '⏸' : '▶'}
+                  {audioLoading ? '⏳' : isPlaying ? '⏸' : '▶'}
                 </button>
                 <button
                   type="button"
@@ -346,6 +429,15 @@ function App() {
                   {getTranslationDisplay()}
                 </button>
               </div>
+              {duration > 0 && (
+                <div className="progress-container">
+                  <span className="time-label">{formatTime(currentTime)}</span>
+                  <div className="progress-bar" onClick={handleProgressClick} role="progressbar" tabIndex={0}>
+                    <div className="progress-fill" style={{ width: `${(currentTime / duration) * 100}%` }} />
+                  </div>
+                  <span className="time-label">{formatTime(duration)}</span>
+                </div>
+              )}
             </div>
           </section>
 
