@@ -223,6 +223,17 @@ function App() {
     setIsPlaying(true)
   }
 
+  const playWordAudio = (word, accent) => {
+    if (!word) return
+    // e.g. "excuse" -> "excuse_uk.mp3"
+    const cleanWord = word.toLowerCase().replace(/[^a-z0-9]/g, '')
+    if (!cleanWord) return
+    const bookPrefix = currentBook?.key?.toLowerCase() || 'nce1'
+    const url = `https://newconceptenglish.com/nce-mp3-single-word/${bookPrefix}/${cleanWord}_${accent}.mp3`
+    const audio = new Audio(url)
+    audio.play().catch(err => console.log('Word audio not found or failed to play:', err))
+  }
+
   const handlePrevLesson = () => {
     if (currentLessonIndex > 0) {
       handleLessonSelect(currentLessonIndex - 1)
@@ -493,19 +504,38 @@ function App() {
             )}
 
             {activeTab === 'vocab' && (
-              <div className="vocab-list">
+              <div className="vocab-grid">
                 {vocabulary.length === 0 ? (
                   <p className="empty-tab">暂无词汇表。当前课文来自社区中英字幕（LRC），未包含结构化词汇数据。</p>
                 ) : (
                   vocabulary.map((word, index) => (
-                    <div key={index} className="vocab-item">
-                      <div>
-                        <span className="vocab-word">{word.word}</span>
-                        <span className="vocab-phonetic">{word.phonetic}</span>
+                    <div key={index} className="word-card">
+                      <div className="word-card-inner">
+                        <div className="word-front">
+                          <div className="word-header">
+                            <span className="word-text">{word.word}</span>
+                            <span className="word-phonetic">{word.phonetic}</span>
+                          </div>
+                          <div className="word-audio-buttons">
+                            <button className="audio-btn" onClick={() => playWordAudio(word.word, 'uk')} title="英音发音">
+                              <span>🇬🇧 英</span>
+                            </button>
+                            <button className="audio-btn" onClick={() => playWordAudio(word.word, 'us')} title="美音发音">
+                              <span>🇺🇸 美</span>
+                            </button>
+                          </div>
+                        </div>
+                        <div className="word-divider"></div>
+                        <div className="word-back">
+                          <div className="word-details">
+                            <span className="word-pos">{word.pos}</span>
+                            <span className="word-def">{word.def}</span>
+                          </div>
+                          {word.example && (
+                            <div className="word-example">&quot;{word.example}&quot;</div>
+                          )}
+                        </div>
                       </div>
-                      <span className="vocab-pos">{word.pos}</span>
-                      <div className="vocab-definition">{word.def}</div>
-                      <div className="vocab-example">&quot;{word.example}&quot;</div>
                     </div>
                   ))
                 )}
