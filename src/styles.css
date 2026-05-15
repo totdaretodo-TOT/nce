@@ -791,9 +791,13 @@ body.dark-theme .footer {
     font-size: 22px;
   }
 
-  .book-select {
+  .header-right {
     width: 100%;
-    margin-top: 10px;
+  }
+
+  .book-select {
+    flex: 1;
+    min-width: 0;
   }
 
   .lesson-list {
