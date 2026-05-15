@@ -395,6 +395,10 @@ function App() {
               </div>
             ))}
           </div>
+          <footer className="footer">
+            <span>© 2026 新概念英语学习播放器 | NCE Learning Player</span>
+            {manifest.attribution && <span className="attribution">{manifest.attribution}</span>}
+          </footer>
         </aside>
 
         <div className="main-content">
@@ -611,11 +615,6 @@ function App() {
           </section>
         </div>
       </div>
-
-      <footer className="footer">
-        <span>© 2026 新概念英语学习播放器 | NCE Learning Player</span>
-        {manifest.attribution && <span className="attribution">{manifest.attribution}</span>}
-      </footer>
     </>
   )
 }

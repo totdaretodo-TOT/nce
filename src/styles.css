@@ -677,12 +677,17 @@ body {
   font-size: 11px;
   color: var(--ink-3);
   font-family: var(--font-mono);
-  padding: 8px;
+  padding: 12px;
+  border-top: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.02);
+}
+
+body.dark-theme .footer {
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .footer .attribution {
   display: block;
-  max-width: 720px;
   margin: 6px auto 0;
   line-height: 1.45;
 }
